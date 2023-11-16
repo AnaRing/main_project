@@ -1,0 +1,19 @@
+body {
+   background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
+}
+
+.header__text {
+   display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.hero__present {
+   width: 10%;
+   height: 10%;
+
+}
