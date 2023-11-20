@@ -18,7 +18,22 @@ body {
 
 }
 
-.socialmedia__icons {
+.socialmedia__icons li {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: inline-block;
    width: 3.5%;
    height: 3.5%;
+   margin-right: 0.625rem;
+}
+
+.socialmedia__txt {
+/* Small */
+color: #000;
+font-family: Kulim Park;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }

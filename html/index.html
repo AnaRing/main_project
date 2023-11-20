@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- relevant title -->
-   <title>Ana's little kitchen</title>
+   <title>Ana's tiny kitchen</title>
     <!-- CSS links -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -14,7 +14,7 @@
    <body>
       <!-- div for header part -->
       <div class="main__header">
-         <h1 class="header__text">Ana's little</h1>
+         <h1 class="header__text">Ana's tiny</h1>
          <h1 class="header__kitchen">KITCHEN</h1>
          <!-- header image -->
          <div>
@@ -76,9 +76,9 @@
             <button class="newsl__submit">Submit</button>
          </div>
          <!-- for the copyright -->
-         <div class="trademark__alk">
+         <div class="trademark__atk">
             <p class="f__copyright">Copyright©2023</p>
-            <h3 class="f__copyright__txt">Ana's little kitchen</h3>
+            <h3 class="f__copyright__txt">Ana's tiny kitchen</h3>
          </div>
          <div>
             <!-- for the connect with me feature -->
@@ -91,11 +91,23 @@
             </ul>
          </div>
          <!-- for the footer notes -->
-         <div>
-            <p onClick=""><i>placeholder</i></p>
-            <p onClick=""><i>placeholder</i></p>
-            <p onClick=""><i>placeholder</i></p>
-            <p onClick=""><i>placeholder</i></p>
+         <div class="footer__links">
+            <p onClick="openPopup('popCookies')"><i>Cookies</i></p>
+               <div class="overlay__cookies" id="popupOverlay">
+                  <div class="popup">
+                  <h4 class="overlay__headliner">Information about Cookies</h4>
+                  <p class="overlay__txt">This is some important information you need to know.</p>
+                  <button onClick="closePopup('popCookies')">Close</button>
+                  </div>
+               </div>
+            <p onClick="openPopup('popTerms')"><i>Terms & Conditions</i></p>
+               <div class="overlay__terms" id="popupOverlay">
+                  <div class="popup">
+                  <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
+                  <p class="overlay__txt">This is some important information you need to know.</p>
+                  <button onClick="closePopup()">Close</button>
+                  </div>
+               </div>
          </div>
       </div>
    
