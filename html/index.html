@@ -18,7 +18,7 @@
          <h1 class="header__txt__kitchen">KITCHEN</h1>
          <!-- header image -->
          <div>
-           <img class="header__pic" src="Header.png" alt="cuttingboard with fruit and ham">
+           <img class="header__pic" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
          </div>
          <!-- buttons for navigation -->
          <div class="h_buttons">
@@ -28,14 +28,14 @@
          </div>
        </div>
       <!-- a div for the hero feature -->
-      <div class="hero__feat">
+      <div class="hero__feat, h_feat_container">
          <!-- for the header for hero feature -->
-         <h2 class="hero_txt">Are you ready for</h2>
+         <h2 class="hero__txt">Are you ready for</h2>
          <!-- for the hero feat text accessory -->
          <div class="hero__accessory">
-            <img class="hero__present" src="Vector.png" alt="red present">
+            <img class="hero__present" src="./main_project_pix/Vector.png" alt="red present">
          </div>
-         <h2 class="header__txt__xmas">Christmas?</h2>
+         <h2 class="hero__txt__xmas">Christmas?</h2>
          <!-- for the slideshow -->
          <div class="hero__slideshow"></div>
          <!-- for the hero text paragraph -->
@@ -52,21 +52,27 @@
          </p>
       </div>
       <!-- a div for the section under the hero feature, with buttons to click onto the recipes -->
-      <div class="undersection">
-         <!-- for the headline for the section -->
+      <div class="undersection__container">
          <h3 class="recipe__headline">Recipes</h3>
-         <!-- for the buttons with pictures of different recipes -->
          <div class="recipe_buttons">
-            <button class="recipe__btn"><img src="Recipe1.png" alt="tortilla with meat and veggies"></button>
-            <p class="taco__desc">A delicious pulled pork taco, with guacamole, pickled red onions and cilanthro.</p>
-            <button class="recipe__btn"><img src="Recipe2.png" alt="pasta with meat sauce and cheese"></button>
-            <p class="ragu__desc">Pasta ragu-sauce made with braised ox-tail, vegetables and parmigiano.</p>
-            <button class="recipe__btn"><img src="Recipe3.png" alt="noodlesoup with chicken and egg"></button>
-            <p class="ramen__desc">Ramen with a hearty broth, chicken breast, spring onion, mushrooms and soy eggs.</p>
-            <button class="recipe__btn"><img src="Recipe4.png" alt="mussles with parsley"></button>
-            <p class="mussles__desc">Mussles steamed with cream, garlic, chili and white wine.</p>
+           <div class="recipe__wrapper">
+             <button class="recipe__btn"><img src="./main_project_pix/Recipe1.png" alt="tortilla with meat and veggies"></button>
+             <p class="taco__desc">A delicious pulled pork taco, with guacamole, pickled red onions, and cilantro.</p>
+           </div>
+           <div class="recipe__wrapper">
+             <button class="recipe__btn"><img src="./main_project_pix/Recipe2.png" alt="pasta with meat sauce and cheese"></button>
+             <p class="ragu__desc">Pasta ragu-sauce made with braised ox-tail, vegetables, and Parmigiano.</p>
+           </div>
+           <div class="recipe__wrapper">
+             <button class="recipe__btn"><img src="./main_project_pix/Recipe3.png" alt="noodlesoup with chicken and egg"></button>
+             <p class="ramen__desc">Ramen with a hearty broth, chicken breast, spring onion, mushrooms, and soy eggs.</p>
+           </div>
+           <div class="recipe__wrapper">
+             <button class="recipe__btn"><img src="./main_project_pix/Recipe4.png" alt="mussels with parsley"></button>
+             <p class="mussels__desc">Mussels steamed with cream, garlic, chili, and white wine.</p>
+           </div>
          </div>
-      </div>
+       </div>
          <!-- a div for the footer -->
       <div class="footer__feats">
          <!-- for the newsletter feature -->
@@ -84,10 +90,10 @@
             <!-- for the connect with me feature -->
             <p class="socialmedia__txt">Connect with me on</p>
             <ul class="socialmedia__icons"> <!-- with the onlick for js -->
-               <li class="btn__instagram" onClick="openTab('tabIg')"><img src="IG.png" alt="black instagram icon"></li>
-               <li class="btn__facebook" onClick="openTab('tabFb')"><img src="FB.png" alt="blue facebook icon"></li>
-               <li class="btn__x" onClick="openTab('tabX')"><img src="X.png" alt="black x icon"></li>
-               <li class="btn__snapchat" onClick="openTab('tabSc')"><img src="SC.png" alt="yellow snapchat icon"></li>
+               <li class="btn__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
+               <li class="btn__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
+               <li class="btn__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
+               <li class="btn__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
             </ul>
          </div>
          <!-- for the footer notes -->

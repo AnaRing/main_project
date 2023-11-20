@@ -2,6 +2,8 @@ html {
    font-size: 16px; 
  }
 body {
+   width: 90rem;
+   height: 117.1875rem;
    background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
 }
 
@@ -15,7 +17,7 @@ body {
 }
 .header__txt {
    position: absolute;
-   top: 50%;
+   top: 55%;
    left: 70%;
    transform: translate(-50%, -50%) rotate(-6.65deg);
    width: 23.89519rem;
@@ -33,7 +35,7 @@ body {
 .header__txt__kitchen {
    position: absolute;
    top: 67%;
-   left: 70%;
+   left: 75%;
    transform: translate(-50%, -50%);
    width: 32.8125rem;
    height: 6.1875rem;
@@ -50,22 +52,22 @@ body {
 @media only screen and (max-width: 768px) {
    .header__txt {
      position: absolute;
-     top: 35%;
-     left: 55%;
+     top: 57%;
+     left: 58%;
      transform: translate(-50%, -50%) rotate(-6.65deg) ;
      width: auto;
      height: auto;
-     font-size: 1rem;
+     font-size: 2.5rem;
    }
  
    .header__txt__kitchen {
      position: absolute;
-     top: 60%; 
-     left: 70%;
+     top: 75%; 
+     left: 64%;
      transform: translate(-50%, -50%);
      width: auto;
      height: auto;
-     font-size: 3rem;
+     font-size: 5rem;
    }
  }
 .h_buttons {
@@ -76,12 +78,90 @@ body {
 .h_buttons button {
    margin: 0.3125rem;
 }
-.hero__present {
-   width: 10%;
-   height: 10%;
 
+.h__feat__container {
+   position: relative;
+   width: 90rem;
+   height: 43.375rem;
+   flex-shrink: 0;
+   background: rgba(217, 217, 217, 0.30);
 }
 
+.hero__txt {
+   position: inherit;
+   top: 50%;
+   left: 50%;
+   color: #000;
+   font-family: Kristi;
+   font-size: 3.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   transform: rotate(-4.65deg)
+}
+
+.hero__txt__xmas {
+   position: inherit;
+   top: 50%;
+   left: 50%;
+   color: #9C0000;
+   font-family: Kristi;
+   font-size: 4.125rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 95.5%;
+   transform: rotate(-4.65deg)
+}
+.hero__present {
+   position: inherit;
+   top: 50%;
+   left: 50%;
+   width: 5%;   
+   height: 5%;
+   transform: rotate(-4.65deg)
+}
+
+.pgh_text {
+   position: inherit;
+   top: 50%;
+   left: 50%;
+   color: #000;
+   font-family: Kulim Park;
+   font-size: 1.25rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+}
+
+.undersection__container {
+   text-align: center;
+ }
+
+ .recipe_buttons {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+ .recipe__wrapper {
+   margin: 10px;
+ }
+
+ .recipe__btn {
+   border: none;
+   background: none;
+   cursor: pointer;
+ }
+
+ .recipe__btn img {
+   width: 16.5625rem;
+   height: 11.1875rem;
+   flex-shrink: 0;
+ }
+
+ .recipe__desc {
+   text-align: center;
+ }
 .newsl__txt {
    /* Small newsletter txt */
    color: #000;
@@ -139,11 +219,11 @@ body {
 }
 
 .socialmedia__txt {
-/* Small socialmedia txt */
-color: #000;
-font-family: Kulim Park;
-font-size: 1rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+   /* Small socialmedia txt */
+   color: #000;
+   font-family: Kulim Park;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
 }
