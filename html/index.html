@@ -12,7 +12,7 @@
    </head>
 
    <body>
-      <!-- div for header part -->
+      <!-- div and container for header part -->
       <div class="main__header">
          <h1 class="header__txt">Ana's tiny</h1>
          <h1 class="header__txt__kitchen">KITCHEN</h1>
@@ -20,7 +20,8 @@
          <div>
            <img class="header__pic" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
          </div>
-         <!-- buttons for navigation -->
+         <!-- buttons for navigation, these will redirect directly to the new page
+              so I will later add an 'onClick' feature to each of them  -->
          <div class="h_buttons">
            <button class="b__about">About me</button>
            <button class="b__recipes">Recipes</button>
@@ -51,7 +52,9 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
          </p>
       </div>
-      <!-- a div for the section under the hero feature, with buttons to click onto the recipes -->
+      <!-- a div for the section under the hero feature, 
+           with buttons to click onto the recipes, they will redirect directly
+           into the recipe page -->
       <div class="undersection__container">
          <h3 class="recipe__headline">Recipes</h3>
          <div class="recipe_buttons">
@@ -73,7 +76,7 @@
            </div>
          </div>
        </div>
-         <!-- a div for the footer -->
+         <!-- a div and container for the footer -->
       <div class="footer__feats">
          <!-- for the newsletter feature -->
          <div class="feat_newsletter">
@@ -87,16 +90,19 @@
             <h3 class="f__copyright__txt">Ana's tiny kitchen</h3>
          </div>
          <div>
-            <!-- for the connect with me feature -->
+            <!-- for the connect with me feature, I want an openTab feature for this
+                 will link my social media in these for full effect  -->
             <p class="socialmedia__txt">Connect with me on</p>
-            <ul class="socialmedia__icons"> <!-- with the onlick for js -->
+            <ul class="socialmedia__icons"> <!-- with the onlick for js, will be added in js later -->
                <li class="btn__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
                <li class="btn__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
                <li class="btn__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
                <li class="btn__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
             </ul>
          </div>
-         <!-- for the footer notes -->
+         <!-- for the footer notes, talked with my group about how teacher
+              recommended to use pop ups on some features, was inspired, so I
+              looked up popUps and found out it played nicely in this section -->
          <div class="footer__links">
             <p onClick="openPopup('popCookies')"><i>Cookies</i></p>
                <div class="overlay__cookies" id="popupOverlay">

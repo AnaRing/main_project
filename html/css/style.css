@@ -1,3 +1,5 @@
+/* defined font size so I can translate to rem 
+   instead of using px */
 html {
    font-size: 16px; 
  }
@@ -7,6 +9,8 @@ body {
    background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
 }
 
+/* made a main header container so I can 
+   try to lay it out according to the prototype */
 .main__header {
    position: relative;
 }
@@ -48,7 +52,7 @@ body {
    line-height: normal;
 }
 
-/* Responsive Styles */
+/* added responsive styles */
 @media only screen and (max-width: 768px) {
    .header__txt {
      position: absolute;
@@ -79,6 +83,9 @@ body {
    margin: 0.3125rem;
 }
 
+/* made a hero feature container so I can 
+   try to lay it out according to the prototype 
+   will also add responsive styles*/
 .h__feat__container {
    position: relative;
    width: 90rem;
@@ -133,6 +140,8 @@ body {
    line-height: normal;
 }
 
+/* made an undersection container so I can
+   try to lay it out according to the prototype */
 .undersection__container {
    text-align: center;
  }
@@ -162,8 +171,29 @@ body {
  .recipe__desc {
    text-align: center;
  }
+
+ /* made a footer container so I can try to place
+   the features according to the prototype */
+ .footer__feats {
+   background: rgba(217, 217, 217, 0.30);
+   width: 90rem;
+   height: 16.25rem;
+   flex-shrink: 0;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 20px;
+   text-align: center;
+ }
+
+ .feat_newsletter, .trademark__atk, 
+ .connect__feature {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
 .newsl__txt {
-   /* Small newsletter txt */
+   /* small newsletter txt */
    color: #000;
    font-family: Kulim Park;
    font-size: 1rem;
@@ -189,6 +219,33 @@ body {
    line-height: normal;
 }
 
+.footer__links {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .footer__links p {
+   margin: 0 10px;
+   cursor: pointer;
+ }
+/* got some help from ChatGPT on the general layout of the popup,
+   will style it according to how I picture it later, 
+   I just needed a "base */
+ .overlay__cookies, .overlay__terms {
+   display: none;
+ }
+
+ .popup {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
+ }
+
+ /* reusing this font quite a bit, will clean up the code later so
+   it doesnt repeat itself too often, and rather is grouped */
 .f__copyright {
    /* Small */
    color: rgba(0, 0, 0, 0.50);
