@@ -1,3 +1,7 @@
+/* disclaimer; if the css code seems a bit weirdly input,
+   it is because I am getting help from the figma developer tool.
+   I will go over it and fix it */
+
 /* defined font size so I can translate to rem 
    instead of using px */
 html {
@@ -220,9 +224,9 @@ body {
 }
 
 .footer__links {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   position: relative;
+   top: 85%;
+   left: -212%;
  }
 
  .footer__links p {

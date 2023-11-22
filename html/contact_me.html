@@ -8,9 +8,36 @@
     <title>Contact me</title>
      <!-- CSS links -->
      <link href="./css/reset.css" rel="stylesheet">
-     <link href="./css/style.css" rel="stylesheet">
+     <link href="./css/cc_style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- this is code I have previously written for a registation form, 
+         which I will be reusing and changing for the purpose of a 
+         contact form -->
+    <h1>Contact me!</h1>
+    <form>
+		<!-- div for input name -->
+        <div>
+            <label for="name"><b>Name</b></label></br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+		  <!-- div for input email -->
+        <div>
+            <label for="email"><b>Email</b></label></br>
+            <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+        </div>
+		  <!-- div for textarea label -->
+        <div>
+            <label for="information"><b>Your inquiry</b></label>
+        </div>
+        <!-- div for the textarea extra information -->
+        <div>
+            <textarea id="info" name="information" rows="5" cols="50" placeholder="What is your inquiry today?"></textarea></div>
+		  <!-- button to submit the form -->
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
       <!-- javascript link -->
       <script src="./js/main.js"></script>
   </body>
