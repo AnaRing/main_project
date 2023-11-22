@@ -1,3 +1,9 @@
+//tried getting a button to work here, but id didnt
+let contactButton = document.getElementsByClassName('b_contact')[0];
+contactButton.addEventListener('click', function(){
+ window.location.href = './html/contact_me.html' ;
+});
+
 function handleScroll(event) {
    // used deltaY to determine the direction of the scroll
    var deltaY = event.deltaY || event.detail || -event.wheelDelta;

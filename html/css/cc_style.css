@@ -1,70 +1,123 @@
 /* this is CSS I've previously written for a registation form
    which I am going to change for the contact me page */
 /* Common styles */
+html {
+   font-size: 16px;
+}
 body {
    font-family: 'SF Pro Display';
-   margin-left: 20px;
+   background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
  }
+
+ .main__header {
+   position: relative;
+}
+
+.header__pic {
+   width: 100%;
+   height: auto;
+}
+.header__txt {
+   position: absolute;
+   top: 55%;
+   left: 70%;
+   transform: translate(-50%, -50%) rotate(-6.65deg);
+   width: 23.89519rem;
+   height: 6.08975rem;
+   flex-shrink: 0;
+   display: block;
+   font-size: 2rem;
+   margin-block-start: 0.67rem;
+   margin-block-end: 0.67rem;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   font-weight: bold;
+}
+
+.header__txt__kitchen {
+   position: absolute;
+   top: 67%;
+   left: 75%;
+   transform: translate(-50%, -50%);
+   width: 32.8125rem;
+   height: 6.1875rem;
+   flex-shrink: 0;
+   color: var(--White, #FFF);
+   font-family: Kulim Park;
+   font-size: 8.125rem;
+   font-style: italic;
+   font-weight: 600;
+   line-height: normal;
+}
+
+/* added responsive styles */
+@media only screen and (max-width: 768px) {
+   .header__txt {
+     position: absolute;
+     top: 57%;
+     left: 58%;
+     transform: translate(-50%, -50%) rotate(-6.65deg) ;
+     width: auto;
+     height: auto;
+     font-size: 2.5rem;
+   }
+ 
+   .header__txt__kitchen {
+     position: absolute;
+     top: 75%; 
+     left: 64%;
+     transform: translate(-50%, -50%);
+     width: auto;
+     height: auto;
+     font-size: 5rem;
+   }
+ }
+.h_buttons {
+   position: relative;
+   text-align: center;
+}
+
+.h_buttons button {
+   margin: 0.3125rem;
+}
+
+form, h2 {
+   margin-left: 1.25rem
+}
+
+h2 {
+   margin-bottom: 1.25rem;
+}
  
  /* Input fields */
  input {
-   margin: 20px 0;
-   padding: 5px;
-   border: 2px solid black;
-   border-radius: 5px;
+   margin: 1.25rem 0;
+   padding: 0.3125rem;
+   border: 0.125rem solid black;
+   border-radius: 0.3125rem;
  }
  
  input:focus {
    background-color: lightcyan;
  }
  
- /* people-select buttons */
- .people {
-   margin-bottom: 10px;
-   padding: 11px 16px;
-   border-radius: 100%;
-   font-weight: bold;
-   border: 2px solid black;
- }
- 
- .people:focus,
- .people:hover {
-   background-color: lightcyan;
-   border-color: orange;
- }
  
  /* Select boxes */
  select {
-   margin: 20px 0;
-   padding: 5px;
-   padding-right: 40px;
-   border: 2px solid black;
-   border-radius: 5px;
- }
- 
- select:focus {
-   background-color: lightcyan;
-   border-color: orange;
- }
- 
- /* Option elements */
- option {
-   font-family: 'SF Pro Display';
-   font-size: small;
- }
-
- /* #date id */
- #date {
-   font-family: inherit;
+   margin: 1.25rem 0;
+   padding: 0.3125rem;
+   padding-right: 2.5rem;
+   border: 0.125rem solid black;
+   border-radius: 0.3125rem;
  }
  
  /* info id */
  #info {
    font-family: 'SF Pro display';
-   margin-top: 20px;
-   margin-bottom: 20px;
-   border-radius: 5px;
-   border: 2px solid black;
+   margin-top: 1.25rem;
+   margin-bottom: 1.25rem;
+   border-radius: 0.3125rem;
+   border: 0.125rem solid black;
    height: fit-content;
    text-align: start;
  }
@@ -79,9 +132,9 @@ body {
  button {
    font-family: 'SF Pro Display';
    font-size: smaller;
-   padding: 10px 15px;
-   border: 2px solid black;
-   border-radius: 5px;
+   padding: 0.625rem 0.9375rem;
+   border: 0.125rem solid black;
+   border-radius: 0.5rem;
  }
  
  button:hover {
@@ -92,5 +145,5 @@ body {
  /* Paragraphs */
  p {
    font-size: small;
-   margin: 2px 0 20px 0px;
+   margin: 0.125rem 0 1.25rem 0px;
  }
