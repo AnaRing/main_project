@@ -24,14 +24,26 @@ function handleScroll(event) {
    }
  });
 
-//tried getting a button to work here, but id didnt
+ const homeRedirect = document.getElementsByClassName('header__pic')[0];
+
+    homeRedirect.addEventListener('click', function () {
+    window.location.href = 'index.html';
+});
+
+//got a button to redirect to a page
   const contactButton = document.getElementsByClassName('b__contact')[0];
 
-  contactButton.addEventListener('click', function () {
-  window.location.href = 'contact_me.html' ;
+    contactButton.addEventListener('click', function () {
+    window.location.href = 'contact_me.html' ;
 }); 
 
- document.addEventListener('DOMContentLoaded', function() {
+  const recipesButton = document.getElementsByClassName('b__recipes')[0];
+
+    recipesButton.addEventListener('click', function () {
+    window.location.href = 'recipes.html' ;
+}); 
+
+document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact__form');
   const toast = document.getElementById('submit__toast');
 
@@ -39,6 +51,31 @@ function handleScroll(event) {
       event.preventDefault();
       toast.style.display = 'block';
       form.reset();
+  });
+});
+
+// some pop-ups for the code prev written in html 
+// for cookies and terms&service
+
+document.addEventListener('DOMContentLoaded', function() {
+  function openPopup(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  document.querySelector('.footer__links p:nth-child(1)' ).addEventListener('click', function() {
+  openPopup('popCookies');
+  })
+  document.querySelector('.footer__links p:nth-child(3)').addEventListener('click', function() {
+  openPopup('popTerms');
+  })
+  document.getElementById('popCookies').querySelector('button').addEventListener('click', function() {
+  closePopup('popCookies');
+  })
+  document.getElementById('popTerms').querySelector('button').addEventListener('click', function() {
+  closePopup('popTerms');
   });
 });
 

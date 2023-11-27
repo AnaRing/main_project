@@ -136,7 +136,7 @@ label {
  
 
  /* Button id */
- button {
+ .submit__button {
    font-family: 'SF Pro Display';
    font-size: smaller;
    padding: 0.625rem 0.9375rem;
@@ -144,7 +144,7 @@ label {
    border-radius: 0.5rem;
  }
  
- button:hover {
+ .submit__button:hover {
    border-color: orange;
    background-color: lightcyan;
  }

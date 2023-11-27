@@ -13,6 +13,7 @@
 
    <body>
       <!-- div and container for header part -->
+      <!-- making header clickable so it redirects home from the different sites -->
       <div class="main__header">
          <h1 class="header__txt">Ana's tiny</h1>
          <h1 class="header__txt__kitchen">KITCHEN</h1>
@@ -20,8 +21,7 @@
          <div>
            <img class="header__pic" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
          </div>
-         <!-- buttons for navigation, these will redirect directly to the new page
-              so I will later add an 'onClick' feature to each of them  -->
+         <!-- buttons for navigation, these will redirect directly to the new page-->
          <div class="h_buttons">
            <button class="b__about">About me</button>
            <button class="b__recipes">Recipes</button>
@@ -103,24 +103,25 @@
          <!-- for the footer notes, talked with my group about how teacher
               recommended to use pop ups on some features, was inspired, so I
               looked up popUps and found out it played nicely in this section -->
-         <div class="footer__links">
-            <p onClick="openPopup('popCookies')"><i>Cookies</i></p>
-               <div class="overlay__cookies" id="popupOverlay">
-                  <div class="popup">
-                  <h4 class="overlay__headliner">Information about Cookies</h4>
-                  <p class="overlay__txt">This is some important information you need to know.</p>
-                  <button onClick="closePopup('popCookies')">Close</button>
-                  </div>
+              <div class="footer__links">
+               <p onclick="openPopup('popCookies')"><i>Cookies</i></p>
+               <div class="overlay__cookies" id="popCookies">
+                   <div class="popup">
+                       <h4 class="overlay__headliner">Information about Cookies</h4>
+                       <p class="overlay__txt">This is some important information you need to know.</p>
+                       <button onclick="closePopup('popCookies')">Close</button>
+                   </div>
                </div>
-            <p onClick="openPopup('popTerms')"><i>Terms & Conditions</i></p>
-               <div class="overlay__terms" id="popupOverlay">
-                  <div class="popup">
-                  <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
-                  <p class="overlay__txt">This is some important information you need to know.</p>
-                  <button onClick="closePopup()">Close</button>
-                  </div>
+       
+               <p onclick="openPopup('popTerms')"><i>Terms & Conditions</i></p>
+               <div class="overlay__terms" id="popTerms">
+                   <div class="popup">
+                       <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
+                       <p class="overlay__txt">This is some important information you need to know.</p>
+                       <button onclick="closePopup('popTerms')">Close</button>
+                   </div>
                </div>
-         </div>
+           </div>
       </div>
    
       <!-- javascript link -->
