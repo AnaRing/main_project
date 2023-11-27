@@ -148,7 +148,10 @@ body {
    try to lay it out according to the prototype */
 .undersection__container {
    text-align: center;
+   margin-left: 158px;
+   margin-right: 158px;
  }
+ 
 
  .recipe_buttons {
    display: flex;
@@ -186,14 +189,19 @@ body {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    gap: 20px;
-   text-align: center;
+   position: relative;     
+   text-align: center;  
+   height: 100%;
+   border-collapse: collapse;  
  }
 
  .feat_newsletter, .trademark__atk, 
  .connect__feature {
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: center, bottom;
+   position: relative;
+   margin-left: 158px;
  }
 
 .newsl__txt {
@@ -225,8 +233,7 @@ body {
 
 .footer__links {
    position: relative;
-   top: 85%;
-   left: -212%;
+   
  }
 
  .footer__links p {

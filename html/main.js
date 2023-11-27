@@ -1,9 +1,3 @@
-//tried getting a button to work here, but id didnt
-let contactButton = document.getElementsByClassName('b_contact')[0];
-contactButton.addEventListener('click', function(){
- window.location.href = './html/contact_me.html' ;
-});
-
 function handleScroll(event) {
    // used deltaY to determine the direction of the scroll
    var deltaY = event.deltaY || event.detail || -event.wheelDelta;
@@ -29,3 +23,22 @@ function handleScroll(event) {
      
    }
  });
+
+//tried getting a button to work here, but id didnt
+  const contactButton = document.getElementsByClassName('b__contact')[0];
+
+  contactButton.addEventListener('click', function () {
+  window.location.href = 'contact_me.html' ;
+}); 
+
+ document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact__form');
+  const toast = document.getElementById('submit__toast');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      toast.style.display = 'block';
+      form.reset();
+  });
+});
+
