@@ -88,10 +88,36 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       toastNewsl.style.display = 'none';
       emailInput.value = ''; 
-    }, 3000);
+    }, 2000);
   });
 });
 
+// reusing my button code here for redirections
+// for the social media buttons
+/* const  = document.getElementsByClassName('')[0];
+
+recipesButton.addEventListener('click', function () {
+window.location.href = '' ;
+});
+
+const  = document.getElementsByClassName('')[0];
+
+recipesButton.addEventListener('click', function () {
+window.location.href = '' ;
+});
+
+const  = document.getElementsByClassName('')[0];
+
+recipesButton.addEventListener('click', function () {
+window.location.href = '' ;
+});
+
+
+const  = document.getElementsByClassName('')[0];
+
+recipesButton.addEventListener('click', function () {
+window.location.href = '' ;
+});  */
 
 // some pop-ups for the code prev written in html 
 // for cookies and terms&service
@@ -128,8 +154,12 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', function (event) {
       event.preventDefault();
       toast.style.display = 'block';
-      form.reset();
-  });
+
+      setTimeout(function() {
+        toast.style.display = 'none';
+        form.reset();
+      }, 2000);
+    });
 });
 
 // javascript for the recipe page
