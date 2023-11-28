@@ -253,7 +253,7 @@ body {
    line-height: normal;
 }
 
- /* style for the toast */
+ /* style for the newsletter toast */
 #newsl__submit__toast {
    display: none;
    position: fixed;

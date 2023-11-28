@@ -74,22 +74,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // toast for newsletter submit button
+// not working at all, just resetting the entire page, so will try to troubleshoot it
+
+/* document.addEventListener('DOMContentLoaded', function() {
+  const featNewslForm = document.querySelector('.form__newsletter form');
+  const toastNewsl = document.getElementById('newsl__submit__toast');
+  const emailInput = featNewslForm.querySelector('.newsl__input');
+
+  featNewslForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    toastNewsl.style.display = 'block';
+
+    setTimeout(function() {
+      toastNewsl.style.display = 'none';
+      emailInput.value = ''; 
+    }, 3000);
+  });
+}); */
 
 document.addEventListener('DOMContentLoaded', function() {
-  const featNewsl = document.querySelector('.feat_newsletter form');
-  const toastNewsl = document.getElementById('newsl__submit__toast');
-  const emailInput = featNewsl.querySelector('.newsl__input');
+  console.log('DOM Content Loaded');
+  const featNewslForm = document.querySelector('.form__newsletter form');
+  console.log('Form:', featNewslForm);
 
-  featNewsl.addEventListener('submit', function (event) {
+  if (featNewslForm) {
+    featNewslForm.addEventListener('submit', function (event) {
+      console.log('Form Submitted');
       event.preventDefault();
       toastNewsl.style.display = 'block';
-    
+
       setTimeout(function() {
         toastNewsl.style.display = 'none';
         emailInput.value = ''; 
       }, 3000);
-  });
-});
+    });
+  }
+}); //troubleshooting code with a little help from chatGPT
 
 // some pop-ups for the code prev written in html 
 // for cookies and terms&service
