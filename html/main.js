@@ -87,31 +87,34 @@ document.addEventListener('DOMContentLoaded', function() {
 // javascript for the recipe page
 // starting with the sorting function
 
-const sortingButtons = document.querySelectorAll('.sort__btn')
-const recipeItems = document.querySelectorAll('.recipe__item')
-const recipeContainer = document.querySelector('.recipe__list')
+document.addEventListener('DOMContentLoaded', function() {
+  const sortingButtons = document.querySelectorAll('.sort__btn')
+  const recipeItems = document.querySelectorAll('.recipe__item')
+  const recipeContainer = document.querySelector('.recipe__list')
 
-const sortingList = (event) => {
-  const currentButton = event.currentTarget;
-  const sortBy = currentButton.dataset.sortby;
+  const sortingList = (event) => {
+    const currentButton = event.currentTarget;
+    const sortBy = currentButton.dataset.sortby;
 
-  const sortedItems = [...recipeItems].filter(item => {
-    if (sortBy === '*') {
-      return true;
-    } else {
-      const splitDataTypes = item.dataset.type.split(',');
+    const sortedItems = [...recipeItems].filter(item => {
+      if (sortBy === '*') {
+        return true;
+      } else {
+        const splitDataTypes = item.dataset.type.split(',');
 
-      return splitDataTypes.includes(sortBy);
-    }
-  });
+        return splitDataTypes.includes(sortBy);
+      }
+    });
 
-  recipeContainer.innerHTML = ' ';
+    recipeContainer.innerHTML = ' ';
 
-  sortedItems.forEach(item => {
-    recipeContainer.appendChild(item);
-  });
-}
+    sortedItems.forEach(item => {
+      recipeContainer.appendChild(item);
+    });
+  }
 
-sortingButtons.forEach(sortingButton => {
-  sortingButton.addEventListener('click', sortingList);
+  sortingButtons.forEach(sortingButton => {
+    sortingButton.addEventListener('click', sortingList);
+  }); 
 });
+//praying that it works after I added DOMContent
