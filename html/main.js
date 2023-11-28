@@ -74,12 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // toast for newsletter submit button
-// not working at all, just resetting the entire page, so will try to troubleshoot it
+// finally works with using querySelector instead of getElementById
 
-/* document.addEventListener('DOMContentLoaded', function() {
-  const featNewslForm = document.querySelector('.form__newsletter form');
+document.addEventListener('DOMContentLoaded', function() {
+  const featNewslForm = document.querySelector('#form__newsletter');
   const toastNewsl = document.getElementById('newsl__submit__toast');
-  const emailInput = featNewslForm.querySelector('.newsl__input');
+  const emailInput = featNewslForm.querySelector('#newsl__input');
 
   featNewslForm.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -90,26 +90,8 @@ document.addEventListener('DOMContentLoaded', function() {
       emailInput.value = ''; 
     }, 3000);
   });
-}); */
+});
 
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM Content Loaded');
-  const featNewslForm = document.querySelector('.form__newsletter form');
-  console.log('Form:', featNewslForm);
-
-  if (featNewslForm) {
-    featNewslForm.addEventListener('submit', function (event) {
-      console.log('Form Submitted');
-      event.preventDefault();
-      toastNewsl.style.display = 'block';
-
-      setTimeout(function() {
-        toastNewsl.style.display = 'none';
-        emailInput.value = ''; 
-      }, 3000);
-    });
-  }
-}); //troubleshooting code with a little help from chatGPT
 
 // some pop-ups for the code prev written in html 
 // for cookies and terms&service
@@ -135,6 +117,8 @@ document.addEventListener('DOMContentLoaded', function() {
   closePopup('popTerms');
   });
 });
+
+// contact me form js
 
 // toast function for the contact me form
 document.addEventListener('DOMContentLoaded', function() {
