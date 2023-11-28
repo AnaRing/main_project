@@ -47,6 +47,50 @@ function handleScroll(event) {
     window.location.href = 'recipes.html' ;
 }); 
 
+// slideshow for hero feature
+
+let slideIndex = 0;
+
+function showSlides() {
+  let i;
+  const slides = document.getElementsByClassName('oneSlide');
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex - 1].style.display = 'block';
+  setTimeout(showSlides, 2000);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  showSlides();
+});
+
+// toast for newsletter submit button
+
+document.addEventListener('DOMContentLoaded', function() {
+  const featNewsl = document.querySelector('.feat_newsletter form');
+  const toastNewsl = document.getElementById('newsl__submit__toast');
+  const emailInput = featNewsl.querySelector('.newsl__input');
+
+  featNewsl.addEventListener('submit', function (event) {
+      event.preventDefault();
+      toastNewsl.style.display = 'block';
+    
+      setTimeout(function() {
+        toastNewsl.style.display = 'none';
+        emailInput.value = ''; 
+      }, 3000);
+  });
+});
+
 // some pop-ups for the code prev written in html 
 // for cookies and terms&service
 

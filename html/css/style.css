@@ -132,6 +132,28 @@ body {
    transform: rotate(-4.65deg)
 }
 
+/* slideshow basic styles
+   will go over css later */
+.slideshow__container {
+   max-width: 62.5rem;
+   position: relative;
+   margin: auto;
+}
+
+.oneslide {
+   display: none;
+}
+
+.fade {
+   animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+   0%, 100% { opacity: 0.4; }
+   20%, 80% { opacity: 1; }
+}
+
+
 .pgh_text {
    position: inherit;
    top: 50%;
@@ -231,6 +253,21 @@ body {
    line-height: normal;
 }
 
+ /* style for the toast */
+#newsl__submit__toast {
+   display: none;
+   position: fixed;
+   bottom: 1.25rem;
+   left: 50%;
+   transform: translate(-50%);
+   border-radius: 0.3125rem;
+   border: 1px solid #357340;
+   background: rgba(102, 200, 119, 0.50);
+   color:black;
+   width: 21.4375rem;
+   height: 3.9375rem;
+   padding: 0.9375rem;
+  }
 .footer__links {
    position: relative;
    

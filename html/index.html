@@ -38,7 +38,20 @@
          </div>
          <h2 class="hero__txt__xmas">Christmas?</h2>
          <!-- for the slideshow -->
-         <div class="hero__slideshow"></div>
+         <div class="slideshow__container">
+            <div class="oneSlide fade">
+               <img class="slide__image1" src="./main_project_pix/Slideshow.png" style="width:50%" alt="duck breast with red beet sauce and potatoes">
+            </div>
+            <div class="oneSlide fade">
+               <img class="slide__image2" src="./main_project_pix/Slideshow2.png" style="width:50%" alt="norwegian pork belly ribs">
+            </div>
+            <div class="oneSlide fade">
+               <img class="slide__image3" src="./main_project_pix/Slideshow3.png" style="width:50%" alt="hot chocolate with whipped cream">
+            </div>
+            <div class="oneSlide fade">
+               <img class="slide__image4" src="./main_project_pix/Slideshow4.png" style="width:50%" alt="norwegian lamb in cabbage stew">
+            </div>
+         </div>
          <!-- for the hero text paragraph -->
          <p class="pgh_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -78,11 +91,12 @@
          <!-- a div and container for the footer -->
       <div class="footer__feats">
          <!-- for the newsletter feature -->
-         <div class="feat_newsletter">
+         <form class="feat_newsletter">
             <p class="newsl__txt">Sign up for my newsletter</p>
-            <input class="newsl__input" type="email" placeholder="Email adress..">
+            <input class="newsl__input" type="email" placeholder="Email adress.." required>
             <button class="newsl__submit">Submit</button>
-         </div>
+         </form>
+         <div id="newsl__submit__toast">Thanks for signing up!</div>
          <!-- for the copyright -->
          <div class="trademark__atk">
             <p class="f__copyright">Copyright©2023</p>
