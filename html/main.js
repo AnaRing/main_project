@@ -1,3 +1,5 @@
+// scrolling function 
+
 function handleScroll(event) {
    // used deltaY to determine the direction of the scroll
    var deltaY = event.deltaY || event.detail || -event.wheelDelta;
@@ -24,35 +26,26 @@ function handleScroll(event) {
    }
  });
 
+ // got a button to redirect to a page
  const homeRedirect = document.getElementsByClassName('header__pic')[0];
 
     homeRedirect.addEventListener('click', function () {
     window.location.href = 'index.html';
 });
 
-//got a button to redirect to a page
+// got a button to redirect to a page
   const contactButton = document.getElementsByClassName('b__contact')[0];
 
     contactButton.addEventListener('click', function () {
     window.location.href = 'contact_me.html' ;
 }); 
 
+// got a button to redirect to a page
   const recipesButton = document.getElementsByClassName('b__recipes')[0];
 
     recipesButton.addEventListener('click', function () {
     window.location.href = 'recipes.html' ;
 }); 
-
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('contact__form');
-  const toast = document.getElementById('submit__toast');
-
-  form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      toast.style.display = 'block';
-      form.reset();
-  });
-});
 
 // some pop-ups for the code prev written in html 
 // for cookies and terms&service
@@ -79,3 +72,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// toast function for the contact me form
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contact__form');
+  const toast = document.getElementById('submit__toast');
+
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      toast.style.display = 'block';
+      form.reset();
+  });
+});
+
+//

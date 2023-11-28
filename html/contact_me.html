@@ -29,32 +29,37 @@
     <!-- this is code I have previously written for a registation form, 
          which I will be reusing and changing for the purpose of a 
          contact form -->
-    <h2>Contact me!</h2>
+    <div class="head__form">
+      <h2 class="head__contact">Contact me!</h2>
+      <p class="head__info">Have any questions, anything you wish to see featured on this site,</b> 
+        or a recipe of your own you want me to try out? Send me a little note here!</p>
+    </div>
     <form id="contact__form">
 		<!-- div for input name -->
-        <div>
+        <div class="email__input">
             <label for="name"><b>Name</b></label></br>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
 		  <!-- div for input email -->
-        <div>
+        <div class="email__input">
             <label for="email"><b>Email</b></label></br>
             <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
         </div>
 		  <!-- div for textarea label -->
-        <div>
+        <div class="inquiry__label">
             <label for="information"><b>Your inquiry</b></label>
         </div>
         <!-- div for the textarea extra information -->
-        <div>
+        <div class="inquiry__input">
             <textarea id="info" name="information" rows="5" cols="50" placeholder="What is your inquiry today?"></textarea></div>
 		  <!-- button to submit the form -->
         <div>
             <button class="submit__button" type="submit">Send</button>
         </div>
     </form>
+    <!-- a div for the toast -->
     <div id="submit__toast">Your inquiry has been sent!</div>
-      <!-- javascript link -->
-      <script src="main.js"></script>
+    <!-- javascript link -->
+    <script src="main.js"></script>
   </body>
 </html>
