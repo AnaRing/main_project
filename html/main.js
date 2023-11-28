@@ -92,29 +92,29 @@ document.addEventListener('DOMContentLoaded', function() {
   const recipeItems = document.querySelectorAll('.recipe__item')
   const recipeContainer = document.querySelector('.recipe__list')
 
-  const sortingList = (event) => {
+  const fliteringList = (event) => {
     const currentButton = event.currentTarget;
-    const sortBy = currentButton.dataset.sortby;
+    const filterBy = currentButton.dataset.filterBy;
 
-    const sortedItems = [...recipeItems].filter(item => {
-      if (sortBy === '*') {
+    const filteredItems = [...recipeItems].filter(item => {
+      if (filterBy === '*') {
         return true;
       } else {
         const splitDataTypes = item.dataset.type.split(',');
 
-        return splitDataTypes.includes(sortBy);
+        return splitDataTypes.includes(filterBy);
       }
     });
 
-    recipeContainer.innerHTML = ' ';
+    recipeContainer.innerHTML = '';
 
-    sortedItems.forEach(item => {
+    filteredItems.forEach(item => {
       recipeContainer.appendChild(item);
     });
   }
 
   sortingButtons.forEach(sortingButton => {
-    sortingButton.addEventListener('click', sortingList);
+    sortingButton.addEventListener('click', fliteringList);
   }); 
 });
 //praying that it works after I added DOMContent
