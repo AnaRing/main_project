@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
   const sortingButtons = document.querySelectorAll('.sort__btn')
   const recipeItems = document.querySelectorAll('.recipe__item')
-  const recipeContainer = document.querySelector('.recipe__list')
+  const recipeContainer = document.getElementById('recipe__list')
 
   const fliteringList = (event) => {
     const currentButton = event.currentTarget;
@@ -117,4 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
     sortingButton.addEventListener('click', fliteringList);
   }); 
 });
-//praying that it works after I added DOMContent
+// praying that it works after I added DOMContent
+// it worked after I actually read what I had done in the html
+// forgot I had used an id declaration and not a class name for the list
