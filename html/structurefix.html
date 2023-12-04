@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+   <html lang="en">
+      <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <link rel="stylesheet" href="./css/reset.css">
+         <link rel="stylesheet" href="./css/structurefix.css">
+      </head>
+      
+      <body>
+         <div class="footer__feats">
+            <!-- for the newsletter feature -->
+            <div class="footer__column1">
+               <form id="form__newsletter">
+                  <p class="newsl__txt">Sign up for my newsletter</p>
+                  <input id="newsl__input" type="email" placeholder="Email adress.." required>
+                  <button class="newsl__submit">Submit</button>
+               </form>
+            </div>
+            <div id="newsl__submit__toast">Thanks for signing up!</div>
+            <!-- for the copyright -->
+            <div class="footer__column2">
+               <div class="trademark__atk">
+                  <p class="f__copyright">Copyright©2023</p>
+                  <h3 class="f__copyright__txt">Ana's tiny kitchen</h3>
+               </div>
+            <!-- for the popup feature -->
+               <div class="footer__links">
+                  <p onclick="openPopup('popCookies')"><i>Cookies</i></p>
+                  <div class="overlay__cookies" id="popCookies">
+                      <div class="popup">
+                          <h4 class="overlay__headliner">Information about Cookies</h4>
+                          <p class="overlay__txt">This is some important information you need to know.</p>
+                          <button onclick="closePopup('popCookies')">Close</button>
+                      </div>
+                  </div>
+          
+                  <p onclick="openPopup('popTerms')"><i>Terms & Conditions</i></p>
+                  <div class="overlay__terms" id="popTerms">
+                      <div class="popup">
+                          <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
+                          <p class="overlay__txt">This is some important information you need to know.</p>
+                          <button onclick="closePopup('popTerms')">Close</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="footer__column3">
+               <!-- for the connect with me feature, I want an openTab feature for this
+                    will link my social media in these for full effect  -->
+               <p class="socialmedia__txt">Connect with me on</p>
+               <ul class="socialmedia__icons"> <!-- with the onlick for js, will be added in js later -->
+                  <li class="btn__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
+                  <li class="btn__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
+                  <li class="btn__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
+                  <li class="btn__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
+               </ul>
+            </div>
+         </div>
+      </body>
+   </html>
