@@ -10,45 +10,39 @@
       </head>
       
       <body>
-         <div class="header__buttons">
-            <button class="button__about">About me</button>
-            <button class="button__recipes">Recipes</button>
-           <button class="button__contact">Contact me</button>
-         </div>
-         </div>
-         <div class="contact__container">
-            <div class="form__column2">
-               <h2 class="head__contact">Contact me!</h2>
-               <p class="head__info">Have any questions, anything you wish to see featured on this site,</b> 
-               or a recipe of your own you want me to try out? Send me a little note here!</p>
+         <div class="recipe__container">
+            <div class="recipe__header">
+               <h3>What will you be eating today?</h3>
             </div>
-            <div class="form__column1">
-            <form id="contact__form">
-               <!-- div for input name -->
-               <div class="email__input">
-               <label for="name"><b>Name</b></label></br>
-               <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <div class="sort__buttons, recipe__column2">
+               <div>
+                  <button class="sort__button" data-filter-by="meat">Meat dishes</button>
+                  <button class="sort__button" data-filter-by="season">Seasonal dishes</button>
+                  <button class="sort__button" data-filter-by="veggie">Vegetarian</button>
+                  <button class="sort__button" data-filter-by="vegan">Vegan</button>
+                  <button class="sort__button" data-filter-by="dessert">Desserts</button>
+                  <button class="sort__button" data-filter-by="pesc">Pescetarian</button>
+                  <button class="sort__button" data-filter-by="*">Clear!</button>
+               </div>
             </div>
-           <!-- div for input email -->              
-            <div class="email__input">
-               <label for="email"><b>Email</b></label></br>
-               <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
-            </div>
-              <!-- div for textarea label -->
-            <div class="inquiry__label">
-               <label for="information"><b>Your inquiry</b></label>
-            </div>
-              <!-- div for the textarea extra information -->
-            <div class="inquiry__input">
-               <textarea id="info" name="information" rows="5" cols="50" placeholder="What is your inquiry today?" required></textarea></div>
-               <!-- button to submit the form -->
-            <div>
-               <button class="submit__button" type="submit">Send</button>              
-            </div>
-          </form>
+            <div id="recipe__list, recipe__column1">
+               <div class="recipe__item" data-type="vegan,veggie,meat,pesc">Ramen broth</div>
+               <div class="recipe__item" data-type="veggie">Soy eggs</div>
+               <div class="recipe__item" data-type="vegan,veggie">Sourdough bread</div>
+               <div class="recipe__item" data-type="meat,season">Christmas ribs</div>
+               <div class="recipe__item" data-type="meat,season">Duck with red beets</div>
+               <div class="recipe__item" data-type="meat,season">Lamb in cabbage stew</div>
+               <div class="recipe__item" data-type="dessert">Gateau Marcel</div>
+               <div class="recipe__item" data-type="dessert">Hot chocolate with whipped cream</div>
+               <div class="recipe__item" data-type="dessert">Nutella hot chocolate</div>
+               <div class="recipe__item" data-type="meat">Pasta carbonara</div>
+               <div class="recipe__item" data-type="meat,veggie">Pasta ragu</div>
+               <div class="recipe__item" data-type="pesc">Mussles with cream and garlic</div>
+               <div class="recipe__item" data-type="pesc">Pan fried bass</div>
+               <div class="recipe__item" data-type="vegan,veggie">Cucumber salad</div>
+               <div class="recipe__item" data-type="pesc">"The Magic Sauce"</div>
+               <div class="recipe__item" data-type="meat">Pulled pork taco</div>
+            </div>  
           </div>
-         </div>
-          <!-- a div for the toast -->
-          <div id="submit__toast">Your inquiry has been sent!</div>
       </body>
    </html>

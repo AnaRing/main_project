@@ -27,31 +27,31 @@ function handleScroll(event) {
  });
 
  // got a button to redirect to a page
- const homeRedirect = document.getElementsByClassName('header__pic')[0];
+ const homeRedirect = document.getElementsByClassName('header__picture')[0];
 
     homeRedirect.addEventListener('click', function () {
     window.location.href = 'index.html';
 });
 
 // got a button to redirect to a page
-  const contactButton = document.getElementsByClassName('b__contact')[0];
+  const contactButton = document.getElementsByClassName('button__contact')[0];
 
     contactButton.addEventListener('click', function () {
     window.location.href = 'contact_me.html' ;
 }); 
 
 // got a button to redirect to a page
-  const recipesButton = document.getElementsByClassName('b__recipes')[0];
+  const recipesButton = document.getElementsByClassName('button__recipes')[0];
 
     recipesButton.addEventListener('click', function () {
     window.location.href = 'recipes.html' ;
 }); 
 
-// javascript for the recipe page
-// starting with the sorting function
+
+// javascript for the sorting function
 
 document.addEventListener('DOMContentLoaded', function() {
-   const sortingButtons = document.querySelectorAll('.sort__btn')
+   const sortingButtons = document.querySelectorAll('.sort__button')
    const recipeItems = document.querySelectorAll('.recipe__item')
    const recipeContainer = document.getElementById('recipe__list')
  

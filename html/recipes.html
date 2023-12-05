@@ -9,66 +9,123 @@
       <title>My recipes</title>
       <!-- CSS links -->
       <link href="./css/reset.css" rel="stylesheet">
-      <link href="./css/style.css" rel="stylesheet">
+      <link href="./css/recipes.css" rel="stylesheet">
    </head>
    
    <body>
       <!-- div and container for header part -->
       <div class="main__header">
-         <h1 class="header__txt">Ana's tiny</h1>
-         <h1 class="header__txt__kitchen">KITCHEN</h1>
+         <h1 class="header__text">Ana's tiny</h1>
+         <h1 class="header__text__kitchen">KITCHEN</h1>
          <!-- header image -->
          <div>
-           <img class="header__pic" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
+           <img class="header__picture" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
          </div>
-         <!-- buttons for navigation, these will redirect directly to the new page
-              so I will later add an 'onClick' feature to each of them  -->
-         <div class="h_buttons">
-           <button class="b__about">About me</button>
-           <button class="b__recipes">Recipes</button>
-           <button class="b__contact">Contact me</button>
+         <!-- buttons for navigation, these will redirect directly to the new page-->
+         <div class="header_buttons">
+           <button class="button__about">About me</button>
+           <button class="button__recipes">Recipes</button>
+           <button class="button__contact">Contact me</button>
          </div>
-       </div>
-
+      </div>
        <div>
          <h2 class="head__recipes">Welcome to my kitchen!</h2>
-         <p class="text__centered">Here you can find some of my favorite recipes.</p>
+         <p class="text__centered">Here you can find some of my favourite recipes!</br> 
+            Navigate to what you want to eat today,</br>
+            by using the buttons on the side. Happy eating!</p>
        </div>
-       <div class="container__recipe">
-         <div class="">
-            <h3>What will you be eating today?</h3>
-         </div>
-         <div class="sort__btns">
-            <div>
-               <button class="sort__btn" data-filter-by="meat">Meat dishes</button>
-               <button class="sort__btn" data-filter-by="season">Seasonal dishes</button>
-               <button class="sort__btn" data-filter-by="veggie">Vegetarian</button>
-               <button class="sort__btn" data-filter-by="vegan">Vegan</button>
-               <button class="sort__btn" data-filter-by="dessert">Desserts</button>
-               <button class="sort__btn" data-filter-by="pesc">Pescetarian</button>
-               <button class="sort__btn" data-filter-by="*">Clear!</button>
+       <div class="recipe__container">
+         
+         <div class="recipe__column1">
+            <div class="recipe__header">
+               <h3>My recipes</h3>
+            </div>
+            <div id="recipe__list">
+               <div class="recipe__item" data-type="vegan,veggie,meat,pesc">Ramen broth</div>
+               <div class="recipe__item" data-type="veggie">Soy eggs</div>
+               <div class="recipe__item" data-type="vegan,veggie">Sourdough bread</div>
+               <div class="recipe__item" data-type="meat,season">Christmas ribs</div>
+               <div class="recipe__item" data-type="meat,season">Duck with red beets</div>
+               <div class="recipe__item" data-type="meat,season">Lamb in cabbage stew</div>
+               <div class="recipe__item" data-type="dessert">Gateau Marcel</div>
+               <div class="recipe__item" data-type="dessert">Hot chocolate with whipped cream</div>
+               <div class="recipe__item" data-type="dessert">Nutella hot chocolate</div>
+               <div class="recipe__item" data-type="meat">Pasta carbonara</div>
+               <div class="recipe__item" data-type="meat,veggie">Pasta ragu</div>
+               <div class="recipe__item" data-type="pesc">Mussles with cream and garlic</div>
+               <div class="recipe__item" data-type="pesc">Pan fried bass</div>
+               <div class="recipe__item" data-type="vegan,veggie">Cucumber salad</div>
+               <div class="recipe__item" data-type="pesc">"The Magic Sauce"</div>
+               <div class="recipe__item" data-type="meat">Pulled pork taco</div>
             </div>
          </div>
-         <div id="recipe__list">
-            <div class="recipe__item" data-type="vegan,veggie,meat,pesc">Ramen broth</div>
-            <div class="recipe__item" data-type="veggie">Soy eggs</div>
-            <div class="recipe__item" data-type="vegan,veggie">Sourdough bread</div>
-            <div class="recipe__item" data-type="meat,season">Christmas ribs</div>
-            <div class="recipe__item" data-type="meat,season">Duck with red beets</div>
-            <div class="recipe__item" data-type="meat,season">Lamb in cabbage stew</div>
-            <div class="recipe__item" data-type="dessert">Gateau Marcel</div>
-            <div class="recipe__item" data-type="dessert">Hot chocolate with whipped cream</div>
-            <div class="recipe__item" data-type="dessert">Nutella hot chocolate</div>
-            <div class="recipe__item" data-type="meat">Pasta carbonara</div>
-            <div class="recipe__item" data-type="meat,veggie">Pasta ragu</div>
-            <div class="recipe__item" data-type="pesc">Mussles with cream and garlic</div>
-            <div class="recipe__item" data-type="pesc">Pan fried bass</div>
-            <div class="recipe__item" data-type="vegan,veggie">Cucumber salad</div>
-            <div class="recipe__item" data-type="pesc">"The Magic Sauce"</div>
-            <div class="recipe__item" data-type="meat">Pulled pork taco</div>
-         </div>
-         
+         <div class="recipe__column2">
+            <div class="button__header">
+               <h3>What will you be eating today?</h3>
+            </div>
+            <div class="sort__buttons">
+               <button class="sort__button" data-filter-by="meat">Meat</button>
+               <button class="sort__button button__seasonal" data-filter-by="season">Seasonal</button>
+               <div class="hero__accessory">
+                  <img class="hero__present" src="./main_project_pix/Vector.png" alt="red present">
+               </div>
+               <button class="sort__button" data-filter-by="veggie">Vegetarian</button>
+               <button class="sort__button" data-filter-by="vegan">Vegan</button>
+               <button class="sort__button" data-filter-by="dessert">Desserts</button>
+               <button class="sort__button" data-filter-by="pesc">Pescetarian</button>
+               <button class="sort__button button__clear" data-filter-by="*">Clear!</button>
+            </div>
+         </div>  
        </div>
+       <div class="footer__feats">
+         <!-- for the newsletter feature -->
+         <div class="footer__column1">
+            <form id="form__newsletter">
+               <p class="newsletter__text">Sign up for my newsletter</p>
+               <input id="newsletter__input" type="email" placeholder="Email adress.." required>
+               <button class="newsletter__submit">Submit</button>
+            </form>
+         </div>
+         <div id="newsletter__toast__push">Thanks for signing up!</div>
+         <!-- for the copyright -->
+         <div class="footer__column2">
+            <div class="trademark__tiny">
+               <p class="feature__copyright">Copyright©2023</p>
+               <h3 class="feature__copyright__text">Ana's tiny kitchen</h3>
+            </div>
+         <!-- for the popup feature -->
+            <div class="footer__links">
+               <p onclick="openPopup('popCookies')"><i>Cookies</i></p>
+               <div class="overlay__cookies" id="popCookies">
+                   <div class="popup">
+                       <h4 class="overlay__headliner">Information about Cookies</h4>
+                       <p class="overlay__text">This is some important information you need to know.</p>
+                       <button onclick="closePopup('popCookies')">Close</button>
+                   </div>
+               </div>
+       
+               <p onclick="openPopup('popTerms')"><i>Terms & Conditions</i></p>
+               <div class="overlay__terms" id="popTerms">
+                   <div class="popup">
+                       <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
+                       <p class="overlay__text">This is some important information you need to know.</p>
+                       <button onclick="closePopup('popTerms')">Close</button>
+                   </div>
+               </div>
+           </div>
+         </div>
+         <div class="footer__column3">
+            <!-- for the connect with me feature, I want an openTab feature for this
+                 will link my social media in these for full effect  -->
+            <p class="socialmedia__text">Connect with me on</p>
+            <ul class="socialmedia__icons"> <!-- with the onlick for js, will be added in js later -->
+               <li class="button__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
+               <li class="button__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
+               <li class="button__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
+               <li class="button__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
+            </ul>
+         </div>
+      </div>
       <!-- javascript link -->
       <script src="./js/recipes.js"></script>
    </body>

@@ -1,0 +1,310 @@
+html {
+   font-size: 16px; 
+ }
+body {
+   width: 90rem;
+   height: 117.1875rem;
+   background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* styles for the header */
+.main__header {
+   position: relative;
+}
+
+.header__picture {
+   width: 100%;
+   height: auto;
+}
+.header__text {
+   position: absolute;
+   z-index: 2;
+   top: 55%;
+   left: 70%;
+   transform: translate(-50%, -50%) rotate(-6.65deg);
+   width: 23.89519rem;
+   height: 6.08975rem;
+   flex-shrink: 0;
+   display: block;
+   font-family: Kristi;
+   font-size: 3.5rem;
+   margin-block-start: 0.67rem;
+   margin-block-end: 0.67rem;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   font-weight: bold;
+}
+
+.header__text__kitchen {
+   position: absolute;
+   top: 67%;
+   left: 75%;
+   transform: translate(-50%, -50%);
+   width: 32.8125rem;
+   height: 6.1875rem;
+   flex-shrink: 0;
+   color: var(--White, #FFF);
+   font-family: Kulim Park;
+   font-size: 8.125rem;
+   font-style: italic;
+   font-weight: 600;
+   line-height: normal;
+}
+
+/* added responsive styles */
+@media only screen and (max-width: 768px) {
+   .header__text {
+     position: absolute;
+     top: 57%;
+     left: 58%;
+     transform: translate(-50%, -50%) rotate(-6.65deg) ;
+     width: auto;
+     height: auto;
+     font-size: 2.5rem;
+   }
+ 
+   .header__text__kitchen {
+     position: absolute;
+     top: 75%; 
+     left: 64%;
+     transform: translate(-50%, -50%);
+     width: auto;
+     height: auto;
+     font-size: 5rem;
+   }
+ }
+
+ /* styles for the header navigatory buttons */
+ .header_buttons {
+   position: absolute;
+   top: 5%;
+   left: 65%;
+   font-family: Kulim Park;
+}
+.header_buttons button {
+   margin: 0.3125rem;
+}
+
+/* styles for the headliner of the body */
+
+.head__recipes, .text__centered  {
+   text-align: center;
+   font-family: Kulim Park;
+}
+
+.head__recipes {
+   font-size: 3.75rem;
+}
+
+.text__centered {
+   font-size: 1.25rem;
+   font-style: italic;
+}
+
+
+/* styles for the container and grid items */
+.recipe__container {
+   display: grid;
+   grid-template-columns: 3fr 3fr;
+   gap: 1.25rem;
+   padding-top: 9.94rem;
+   padding-bottom: 7.56rem;
+   padding-left: 11rem;
+}
+
+.recipe__header, .button__header {
+   font-family: Kulim Park;
+   font-size: 2.5rem;
+   padding-bottom: 2.94rem;
+   text-align: center;
+}
+
+.recipe__item, .sort__button {
+   font-family: Kulim Park;
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.recipe__item {
+   margin-bottom: 2rem;
+}
+
+.sort__button {
+   width: 6.875rem;
+   height: 2.5rem;
+   flex-shrink: 0;
+   border-radius: 0.3125rem;
+   border: 0.0625rem solid #000;
+   background-color: lightgray;
+   align-items: center;
+   margin-right: 3.12rem;
+   margin-left: 5.44rem;
+   margin-bottom: 2.38rem;
+}
+
+.button__seasonal {
+   font-family: Kulim Park;
+   font-size: 1.25rem;
+   font-weight: 600;
+   color: var(--Christmas, #9C0000);
+   width: 6.875rem;
+   height: 2.5rem;
+   flex-shrink: 0;
+   border-radius: 0.3125rem;
+   border: 0.0625rem solid #000;
+   background-color: lightgray;
+   align-items: center;
+   margin-right: 3.12rem;
+   margin-left: 5.44rem;
+   margin-bottom: 2.38rem;
+}
+
+
+/* styles for the footer and its features */
+.footer__feats {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10.5rem;
+   padding-left: 10.1rem;
+   padding-right: 10.1rem;
+ }
+
+.newsletter__text {
+   /* small newsletter txt */
+   color: #000;
+   font-family: Kulim Park;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   padding-left: 0.59rem;
+}
+
+.newsletter__input {
+   width: 16.5625rem;
+   height: 2rem;
+   flex-shrink: 0;
+   font-family: Kulim Park;
+   border-radius: 0.1875rem;
+   border: 0.0625rem solid rgba(0, 0, 0, 0.70);
+   background: var(--White, #FFF);
+   padding-left: 10.06rem;
+
+
+   /* placeholder */
+   color: rgba(0, 0, 0, 0.50);
+   font-family: Kulim Park;
+   font-size: 0.95rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+}
+
+/* style for the newsletter toast */
+#newsletter__toast__push {
+   display: none;
+   font-family: Kulim Park;
+   position: fixed;
+   bottom: 1.25rem;
+   left: 50%;
+   transform: translate(-50%);
+   border-radius: 0.3125rem;
+   border: 1px solid #357340;
+   background: rgba(102, 200, 119, 0.50);
+   color:black;
+   width: 21.4375rem;
+   height: 3.9375rem;
+   padding: 0.9375rem;
+}
+
+.footer__links {
+   display: flex;
+   font-family: Kulim Park;
+   text-align: center;
+   justify-content: center;
+   width: 100%; 
+   margin: 0 auto; 
+ }
+
+ .footer__links p {
+   margin-top: 4.62rem;
+   margin-right: 4.94rem;
+   cursor: pointer;
+   font-size: 1rem;
+   padding-left: 1rem;
+ }
+/* got some help from ChatGPT on the general layout of the popup,
+   will style it according to how I picture it later, 
+   I just needed a "base */
+ .overlay__cookies, .overlay__terms {
+   display: none;
+ }
+
+ .popup {
+   background-color: #fff;
+   padding: 0.9375rem;
+   border-radius: 0.5rem;
+   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+   text-align: center;
+   font-family: Kulim Park;
+ }
+
+ /* reusing this font quite a bit, will clean up the code later so
+   it doesnt repeat itself too often, and rather is grouped */
+.feature__copyright {
+   /* Small */
+   color: rgba(0, 0, 0, 0.50);
+   font-family: Kulim Park;
+   font-size: 0.95rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   text-align: center;
+}
+
+.feature__copyright__text {
+   color: rgba(0, 0, 0, 0.80);
+   font-family: Kristi;
+   font-size: 3.125rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   text-align: center;
+}
+
+.footer__column3 {
+   text-align: center;
+}
+
+.socialmedia__icons {
+   list-style-type: none;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 1.53rem;
+}
+
+.socialmedia__icons li {
+   width: 10%;
+   height: 10%;
+   margin: 0;
+}
+
+.socialmedia__text {
+   /* Small socialmedia txt */
+   color: #000;
+   font-family: Kulim Park;
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   text-align: center;
+}

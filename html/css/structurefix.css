@@ -4,7 +4,7 @@
    box-sizing: border-box;
 }
 
-.contact__container {
+.recipe__container {
    display: grid;
    grid-template-columns: 3fr 3fr;
    gap: 1.25rem;
