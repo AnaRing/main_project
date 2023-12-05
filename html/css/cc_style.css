@@ -10,18 +10,24 @@ body {
   background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* made a main header container so I can 
   try to lay it out according to the prototype */
 .main__header {
   position: relative;
 }
 
-.header__pic {
+.header__picture {
   width: 100%;
   height: auto;
 }
 
-.header__txt {
+.header__text {
   position: absolute;
   top: 55%;
   left: 70%;
@@ -38,7 +44,7 @@ body {
   font-weight: bold;
 }
 
-.header__txt__kitchen {
+.header__text__kitchen {
   position: absolute;
   top: 67%;
   left: 75%;
@@ -56,7 +62,7 @@ body {
 
 /* added responsive styles */
 @media only screen and (max-width: 768px) {
-  .header__txt {
+  .header__text {
     position: absolute;
     top: 57%;
     left: 58%;
@@ -66,7 +72,7 @@ body {
     font-size: 2.5rem;
   }
 
-  .header__txt__kitchen {
+  .header__text__kitchen {
     position: absolute;
     top: 75%; 
     left: 64%;
@@ -76,37 +82,64 @@ body {
     font-size: 5rem;
   }
 }
-.h_buttons {
+.header_buttons {
   position: relative;
   text-align: center;
 }
 
-.h_buttons button {
+.header_buttons button {
   margin: 0.3125rem;
 }
 
-
-form, h2 {
-   margin-left: 1.25rem
+.contact__container {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 6.94rem;
+  padding-top: 8.94rem;
+  padding-bottom: 10rem;
+  padding-left: 10.6rem;
 }
 
-h2 {
-   margin-bottom: 1.25rem;
+.head__contact {
+  font-family: Kulim Park;
+  font-size: 6.25rem;
+  font-style: bold;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.head__info {
+  margin-top: 3.19rem;
+  font-family: Kulim Park;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
  
  /* Input fields */
- input {
-   margin: 1.25rem 0;
-   padding: 0.3125rem;
-   border: 0.125rem solid black;
-   border-radius: 0.3125rem;
+ .form__column1 {
+  padding-top: 4.06rem;
  }
-label {
- font-family: 'SF Pro display';
-}
- 
- input:focus {
-   background-color: lightcyan;
+
+ label {
+  font-family: Kulim Park;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+ }
+
+ .inputs {
+  width: 16.5625rem;
+  height: 2.1875rem;
+  flex-shrink: 0;
+  border-radius: 0.1875rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.70);
+  background: var(--White, #FFF);
+  margin-top: 0.94rem;
+  margin-bottom: 2.44rem;
  }
  
  
@@ -115,17 +148,16 @@ label {
    margin: 1.25rem 0;
    padding: 0.3125rem;
    padding-right: 2.5rem;
-   border: 0.125rem solid black;
+   border: 0.0625rem solid rgba(0, 0, 0, 0.70);
    border-radius: 0.3125rem;
  }
  
  /* info id */
  #info {
-   font-family: 'SF Pro display';
+   font-family: Kulim Park;
    margin-top: 1.25rem;
    margin-bottom: 1.25rem;
    border-radius: 0.3125rem;
-   border: 0.125rem solid black;
    height: fit-content;
    text-align: start;
  }
@@ -138,11 +170,12 @@ label {
 
  /* Button id */
  .submit__button {
-   font-family: 'SF Pro Display';
+   font-family: Kulim Park;
    font-size: smaller;
    padding: 0.625rem 0.9375rem;
    border: 0.125rem solid black;
    border-radius: 0.5rem;
+   margin-left: 9.8rem;
  }
  
  .submit__button:hover {
@@ -158,6 +191,7 @@ label {
 
  #submit__toast {
   display: none;
+  font-family: Kulim Park;
   position: fixed;
   bottom: 1.25rem;
   left: 50%;
@@ -165,8 +199,153 @@ label {
   border-radius: 0.3125rem;
   border: 1px solid #357340;
   background: rgba(102, 200, 119, 0.50);
-  color:black;
+  color:black;    
   width: 21.4375rem;
   height: 3.9375rem;
   padding: 0.9375rem;
+ }
+
+  /* made a footer container so I can try to place
+   the features according to the prototype */
+
+   .footer__feats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10.5rem;
+    padding-left: 10.1rem;
+    padding-right: 10.1rem;
+  }
+ 
+ .newsletter__text {
+    /* small newsletter txt */
+    color: #000;
+    font-family: Kulim Park;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 0.59rem;
+ }
+ 
+ .newsletter__input {
+    width: 16.5625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    font-family: Kulim Park;
+    border-radius: 0.1875rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.70);
+    background: var(--White, #FFF);
+    padding-left: 10.06rem;
+
+ 
+    /* placeholder */
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Kulim Park;
+    font-size: 0.95rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+ }
+ 
+ /* style for the newsletter toast */
+ #newsletter__toast__push {
+    display: none;
+    font-family: Kulim Park;
+    position: fixed;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 0.3125rem;
+    border: 1px solid #357340;
+    background: rgba(102, 200, 119, 0.50);
+    color:black;
+    width: 21.4375rem;
+    height: 3.9375rem;
+    padding: 0.9375rem;
+ }
+ 
+ .footer__links {
+    display: flex;
+    font-family: Kulim Park;
+    text-align: center;
+    justify-content: center;
+    width: 100%; 
+    margin: 0 auto; 
+  }
+ 
+  .footer__links p {
+    margin-top: 4.62rem;
+    margin-right: 4.94rem;
+    cursor: pointer;
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+ /* got some help from ChatGPT on the general layout of the popup,
+    will style it according to how I picture it later, 
+    I just needed a "base */
+  .overlay__cookies, .overlay__terms {
+    display: none;
+  }
+ 
+  .popup {
+    background-color: #fff;
+    padding: 0.9375rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Kulim Park;
+  }
+ 
+  /* reusing this font quite a bit, will clean up the code later so
+    it doesnt repeat itself too often, and rather is grouped */
+ .feature__copyright {
+    /* Small */
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Kulim Park;
+    font-size: 0.95rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+ }
+ 
+ .feature__copyright__text {
+    color: rgba(0, 0, 0, 0.80);
+    font-family: Kristi;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+ }
+ 
+ .footer__column3 {
+    text-align: center;
+ }
+ 
+ .socialmedia__icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.53rem;
+ }
+ 
+ .socialmedia__icons li {
+    width: 10%;
+    height: 10%;
+    margin: 0;
+ }
+ 
+ .socialmedia__text {
+    /* Small socialmedia txt */
+    color: #000;
+    font-family: Kulim Park;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
  }

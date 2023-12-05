@@ -10,54 +10,45 @@
       </head>
       
       <body>
-         <div class="footer__feats">
-            <!-- for the newsletter feature -->
-            <div class="footer__column1">
-               <form id="form__newsletter">
-                  <p class="newsl__txt">Sign up for my newsletter</p>
-                  <input id="newsl__input" type="email" placeholder="Email adress.." required>
-                  <button class="newsl__submit">Submit</button>
-               </form>
-            </div>
-            <div id="newsl__submit__toast">Thanks for signing up!</div>
-            <!-- for the copyright -->
-            <div class="footer__column2">
-               <div class="trademark__atk">
-                  <p class="f__copyright">Copyright©2023</p>
-                  <h3 class="f__copyright__txt">Ana's tiny kitchen</h3>
-               </div>
-            <!-- for the popup feature -->
-               <div class="footer__links">
-                  <p onclick="openPopup('popCookies')"><i>Cookies</i></p>
-                  <div class="overlay__cookies" id="popCookies">
-                      <div class="popup">
-                          <h4 class="overlay__headliner">Information about Cookies</h4>
-                          <p class="overlay__txt">This is some important information you need to know.</p>
-                          <button onclick="closePopup('popCookies')">Close</button>
-                      </div>
-                  </div>
-          
-                  <p onclick="openPopup('popTerms')"><i>Terms & Conditions</i></p>
-                  <div class="overlay__terms" id="popTerms">
-                      <div class="popup">
-                          <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
-                          <p class="overlay__txt">This is some important information you need to know.</p>
-                          <button onclick="closePopup('popTerms')">Close</button>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="footer__column3">
-               <!-- for the connect with me feature, I want an openTab feature for this
-                    will link my social media in these for full effect  -->
-               <p class="socialmedia__txt">Connect with me on</p>
-               <ul class="socialmedia__icons"> <!-- with the onlick for js, will be added in js later -->
-                  <li class="btn__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
-                  <li class="btn__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
-                  <li class="btn__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
-                  <li class="btn__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
-               </ul>
-            </div>
+         <div class="header__buttons">
+            <button class="button__about">About me</button>
+            <button class="button__recipes">Recipes</button>
+           <button class="button__contact">Contact me</button>
          </div>
+         </div>
+         <div class="contact__container">
+            <div class="form__column2">
+               <h2 class="head__contact">Contact me!</h2>
+               <p class="head__info">Have any questions, anything you wish to see featured on this site,</b> 
+               or a recipe of your own you want me to try out? Send me a little note here!</p>
+            </div>
+            <div class="form__column1">
+            <form id="contact__form">
+               <!-- div for input name -->
+               <div class="email__input">
+               <label for="name"><b>Name</b></label></br>
+               <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+           <!-- div for input email -->              
+            <div class="email__input">
+               <label for="email"><b>Email</b></label></br>
+               <input type="email" id="email" name="email" placeholder="Enter your e-mail" required>
+            </div>
+              <!-- div for textarea label -->
+            <div class="inquiry__label">
+               <label for="information"><b>Your inquiry</b></label>
+            </div>
+              <!-- div for the textarea extra information -->
+            <div class="inquiry__input">
+               <textarea id="info" name="information" rows="5" cols="50" placeholder="What is your inquiry today?" required></textarea></div>
+               <!-- button to submit the form -->
+            <div>
+               <button class="submit__button" type="submit">Send</button>              
+            </div>
+          </form>
+          </div>
+         </div>
+          <!-- a div for the toast -->
+          <div id="submit__toast">Your inquiry has been sent!</div>
       </body>
    </html>

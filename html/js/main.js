@@ -27,21 +27,21 @@ function handleScroll(event) {
  });
 
  // got a button to redirect to a page
- const homeRedirect = document.getElementsByClassName('header__pic')[0];
+ const homeRedirect = document.getElementsByClassName('header__picture')[0];
 
     homeRedirect.addEventListener('click', function () {
     window.location.href = 'index.html';
 });
 
 // got a button to redirect to a page
-  const contactButton = document.getElementsByClassName('b__contact')[0];
+  const contactButton = document.getElementsByClassName('button__contact')[0];
 
     contactButton.addEventListener('click', function () {
     window.location.href = 'contact_me.html' ;
 }); 
 
 // got a button to redirect to a page
-  const recipesButton = document.getElementsByClassName('b__recipes')[0];
+  const recipesButton = document.getElementsByClassName('button__recipes')[0];
 
     recipesButton.addEventListener('click', function () {
     window.location.href = 'recipes.html' ;
@@ -77,16 +77,16 @@ document.addEventListener('DOMContentLoaded', function() {
 // finally works with using querySelector instead of getElementById
 
 document.addEventListener('DOMContentLoaded', function() {
-  const featNewslForm = document.querySelector('#form__newsletter');
-  const toastNewsl = document.getElementById('newsl__submit__toast');
-  const emailInput = featNewslForm.querySelector('#newsl__input');
+  const featureNewsletterForm = document.querySelector('#form__newsletter');
+  const toastNewsletter = document.getElementById('newsletter__toast__push');
+  const emailInput = featureNewsletterForm.querySelector('#newsletter__input');
 
-  featNewslForm.addEventListener('submit', function (event) {
+  featureNewsletterForm.addEventListener('submit', function (event) {
     event.preventDefault();
-    toastNewsl.style.display = 'block';
+    toastNewsletter.style.display = 'block';
 
     setTimeout(function() {
-      toastNewsl.style.display = 'none';
+      toastNewsletter.style.display = 'none';
       emailInput.value = ''; 
     }, 2000);
   });

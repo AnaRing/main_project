@@ -15,32 +15,32 @@
       <!-- div and container for header part -->
       <!-- making header clickable so it redirects home from the different sites -->
       <div class="main__header">
-         <h1 class="header__txt">Ana's tiny</h1>
-         <h1 class="header__txt__kitchen">KITCHEN</h1>
+         <h1 class="header__text">Ana's tiny</h1>
+         <h1 class="header__text__kitchen">KITCHEN</h1>
          <!-- header image -->
          <div>
-           <img class="header__pic" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
+           <img class="header__picture" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
          </div>
          <!-- buttons for navigation, these will redirect directly to the new page-->
-         <div class="h_buttons">
-           <button class="b__about">About me</button>
-           <button class="b__recipes">Recipes</button>
-           <button class="b__contact">Contact me</button>
+         <div class="header_buttons">
+           <button class="button__about">About me</button>
+           <button class="button__recipes">Recipes</button>
+           <button class="button__contact">Contact me</button>
          </div>
       </div>
        <div class="hero__container">
          <div class="hero__column1">
-            <div class="hero__txt__container">
+            <div class="hero__text__container">
                <!-- for the header for hero feature -->
-               <h2 class="hero__txt">Are you ready for</h2>
+               <h2 class="hero__text">Are you ready for</h2>
                <!-- for the hero feat text accessory -->
                <div class="hero__accessory">
                   <img class="hero__present" src="./main_project_pix/Vector.png" alt="red present">
                </div>
-               <h2 class="hero__txt__xmas">Christmas?</h2>
+               <h2 class="hero__text__christmas">Christmas?</h2>
            </div>
          <!-- for the hero text paragraph -->
-         <p class="pgh_text">
+         <p class="info__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Praesent vel maximus dolor. Proin maximus massa non purus
             sollicitudin, nec rhoncus lacus venenatis. 
@@ -70,27 +70,26 @@
             </div>
          </div>
       </div>
-      <!-- a div for the section under the hero feature, 
-           with buttons to click onto the recipes pop up?/redirect? -->
-      <div class="uc__headline__container">
-         <h3 class="uc__headline">Recipes</h3>
+      <!-- a div for the section under the hero feature -->
+      <div class="headline__container">
+         <h3 class="content__headline">Recipes</h3>
       </div>
       <div class="undersection__container">
          <div class="recipe__wrapper">
-            <button class="recipe__btn"><img src="./main_project_pix/Recipe1.png" alt="tortilla with meat and veggies"></button>
-            <p class="taco__desc">A delicious pulled pork taco, with guacamole, pickled red onions, and cilantro.</p>
+            <button class="recipe__buttons"><img src="./main_project_pix/Recipe1.png" alt="tortilla with meat and veggies"></button>
+            <p class="taco__description">A delicious pulled pork taco, with guacamole, pickled red onions, and cilantro.</p>
          </div>
          <div class="recipe__wrapper">
-                    <button class="recipe__btn"><img src="./main_project_pix/Recipe4.png" alt="mussels with parsley"></button>
-                    <p class="mussels__desc">Mussels steamed with cream, garlic, chili, and white wine.</p>
+                    <button class="recipe__buttons"><img src="./main_project_pix/Recipe4.png" alt="mussels with parsley"></button>
+                    <p class="mussels__description">Mussels steamed with cream, garlic, chili, and white wine.</p>
          </div>
          <div class="recipe__wrapper">
-                    <button class="recipe__btn"><img src="./main_project_pix/Recipe3.png" alt="noodlesoup with chicken and egg"></button>
-                    <p class="ramen__desc">Ramen with a hearty broth, chicken breast, spring onion, mushrooms, and soy eggs.</p>
+                    <button class="recipe__buttons"><img src="./main_project_pix/Recipe3.png" alt="noodlesoup with chicken and egg"></button>
+                    <p class="ramen__description">Ramen with a hearty broth, chicken breast, spring onion, mushrooms, and soy eggs.</p>
                 </div>
                 <div class="recipe__wrapper">
-                    <button class="recipe__btn"><img src="./main_project_pix/Recipe2.png" alt="pasta with meat sauce and cheese"></button>
-                    <p class="ragu__desc">Pasta ragu-sauce made with braised ox-tail, vegetables, and Parmigiano.</p>
+                    <button class="recipe__buttons"><img src="./main_project_pix/Recipe2.png" alt="pasta with meat sauce and cheese"></button>
+                    <p class="ragu__description">Pasta ragu-sauce made with braised ox-tail, vegetables, and Parmigiano.</p>
                 </div>
          </div>
          </div>
@@ -100,17 +99,17 @@
             <!-- for the newsletter feature -->
             <div class="footer__column1">
                <form id="form__newsletter">
-                  <p class="newsl__txt">Sign up for my newsletter</p>
-                  <input id="newsl__input" type="email" placeholder="Email adress.." required>
-                  <button class="newsl__submit">Submit</button>
+                  <p class="newsletter__text">Sign up for my newsletter</p>
+                  <input id="newsletter__input" type="email" placeholder="Email adress.." required>
+                  <button class="newsletter__submit">Submit</button>
                </form>
             </div>
-            <div id="newsl__submit__toast">Thanks for signing up!</div>
+            <div id="newsletter__toast__push">Thanks for signing up!</div>
             <!-- for the copyright -->
             <div class="footer__column2">
-               <div class="trademark__atk">
-                  <p class="f__copyright">Copyright©2023</p>
-                  <h3 class="f__copyright__txt">Ana's tiny kitchen</h3>
+               <div class="trademark__tiny">
+                  <p class="feature__copyright">Copyright©2023</p>
+                  <h3 class="feature__copyright__text">Ana's tiny kitchen</h3>
                </div>
             <!-- for the popup feature -->
                <div class="footer__links">
@@ -118,7 +117,7 @@
                   <div class="overlay__cookies" id="popCookies">
                       <div class="popup">
                           <h4 class="overlay__headliner">Information about Cookies</h4>
-                          <p class="overlay__txt">This is some important information you need to know.</p>
+                          <p class="overlay__text">This is some important information you need to know.</p>
                           <button onclick="closePopup('popCookies')">Close</button>
                       </div>
                   </div>
@@ -127,7 +126,7 @@
                   <div class="overlay__terms" id="popTerms">
                       <div class="popup">
                           <h4 class="overlay__headliner">Information regarding Terms & Conditions</h4>
-                          <p class="overlay__txt">This is some important information you need to know.</p>
+                          <p class="overlay__text">This is some important information you need to know.</p>
                           <button onclick="closePopup('popTerms')">Close</button>
                       </div>
                   </div>
@@ -136,12 +135,12 @@
             <div class="footer__column3">
                <!-- for the connect with me feature, I want an openTab feature for this
                     will link my social media in these for full effect  -->
-               <p class="socialmedia__txt">Connect with me on</p>
+               <p class="socialmedia__text">Connect with me on</p>
                <ul class="socialmedia__icons"> <!-- with the onlick for js, will be added in js later -->
-                  <li class="btn__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
-                  <li class="btn__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
-                  <li class="btn__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
-                  <li class="btn__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
+                  <li class="button__instagram" onClick="openTab('tabIg')"><img src="./main_project_pix/IG.png" alt="black instagram icon"></li>
+                  <li class="button__facebook" onClick="openTab('tabFb')"><img src="./main_project_pix/FB.png" alt="blue facebook icon"></li>
+                  <li class="button__x" onClick="openTab('tabX')"><img src="./main_project_pix/X.png" alt="black x icon"></li>
+                  <li class="button__snapchat" onClick="openTab('tabSc')"><img src="./main_project_pix/SC.png" alt="yellow snapchat icon"></li>
                </ul>
             </div>
          </div>

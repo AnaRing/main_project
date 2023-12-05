@@ -1,5 +1,4 @@
-defined font size so I can translate to rem 
-   instead of using px 
+
 html {
    font-size: 16px; 
  }
@@ -15,11 +14,11 @@ body {
    position: relative;
 }
 
-.header__pic {
+.header__picture {
    width: 100%;
    height: auto;
 }
-.header__txt {
+.header__text {
    position: absolute;
    top: 55%;
    left: 70%;
@@ -37,7 +36,7 @@ body {
    font-weight: bold;
 }
 
-.header__txt__kitchen {
+.header__text__kitchen {
    position: absolute;
    top: 67%;
    left: 75%;
@@ -55,7 +54,7 @@ body {
 
 /* added responsive styles */
 @media only screen and (max-width: 768px) {
-   .header__txt {
+   .header__text {
      position: absolute;
      top: 57%;
      left: 58%;
@@ -65,7 +64,7 @@ body {
      font-size: 2.5rem;
    }
  
-   .header__txt__kitchen {
+   .header__text__kitchen {
      position: absolute;
      top: 75%; 
      left: 64%;
@@ -75,12 +74,12 @@ body {
      font-size: 5rem;
    }
  }
-.h_buttons {
+.header_buttons {
    position: relative;
    text-align: center;
 }
 
-.h_buttons button {
+.header_buttons button {
    margin: 0.3125rem;
 }
 
@@ -98,7 +97,7 @@ body {
 
 /* style the container */
 
-.hero__txt__container {
+.hero__text__container {
    position: relative;
    padding-left: 13.81rem;
    padding-top: 0;
@@ -112,22 +111,26 @@ body {
    padding-right: 9.875rem;
 }
 
-.hero__txt {
-   position: relative;
+.hero__text {
+   position: absolute;
+   top: -1.5rem;
+   left: 0;
    color: #000;
    font-family: Kristi;
-   font-size: 6.25rem;
+   font-size: 5rem;
    font-style: normal;
    font-weight: 400;
    line-height: normal;
    transform: rotate(-4.65deg)
 }
 
-.hero__txt__xmas {
-   position: relative;
+.hero__text__christmas {
+   position: absolute;
+   top: 2.5rem;
+   left: 4rem;
    color: #9C0000;
    font-family: Kristi;
-   font-size: 6.25rem;
+   font-size: 7rem;
    font-style: normal;
    font-weight: 400;
    line-height: 95.5%;
@@ -136,23 +139,23 @@ body {
 }
 
 .hero__present {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   width: 7%;   
-   height: 7%;
-   transform: rotate(-4.65deg)
+   position: relative;
+   top: 4.5rem;
+   left:-14.5rem;
+   height: 30%;
+   width: 30%;
+   transform: rotate(-4.5deg)
 }
 
-.pgh_text {
+.info__text {
    color: #000;
    font-family: Kulim Park;
    font-size: 1.25rem;
    font-style: normal;
    font-weight: 600;
    line-height: normal;
-   margin-top: 2rem;
-   padding-left: 15.9375rem;
+   margin-top: 5rem;
+   padding-left: 5.94rem;
 }
 
 /* slideshow */
@@ -186,12 +189,12 @@ body {
 
 /* made an undersection container so I can
    try to lay it out according to the prototype */
-   .uc__headline__container {
+   .headline__container {
       text-align: center;
       margin-top: 4rem;
    }
    
-   .uc__headline {
+   .content__headline {
       font-family: Kristi;
       font-size: 4.375rem;
    }
@@ -213,16 +216,17 @@ body {
    
    /* style the columns */
    
-   .recipe__btn {
+   .recipe__button {
       width: 100%;
       border: none;
       padding: 0;
    }
    
-   .taco__desc, .mussels__desc,
-   .ramen__desc, .ragu__desc {
+   .taco__description, .mussels__description,
+   .ramen__description, .ragu__description {
       margin-top: 1rem;
       text-align: center;
+      font-family: Kulim Park;
    }
 
  /* made a footer container so I can try to place
@@ -235,7 +239,7 @@ body {
       padding-right: 10.1rem;
     }
    
-   .newsl__txt {
+   .newsletter__text {
       /* small newsletter txt */
       color: #000;
       font-family: Kulim Park;
@@ -246,7 +250,7 @@ body {
       padding-left: 0.59rem;
    }
    
-   .newsl__input {
+   .newsletter__input {
       width: 16.5625rem;
       height: 2rem;
       flex-shrink: 0;
@@ -255,6 +259,7 @@ body {
       border: 0.0625rem solid rgba(0, 0, 0, 0.70);
       background: var(--White, #FFF);
       padding-left: 10.06rem;
+
    
       /* placeholder */
       color: rgba(0, 0, 0, 0.50);
@@ -266,7 +271,7 @@ body {
    }
    
    /* style for the newsletter toast */
-   #newsl__submit__toast {
+   #newsletter__toast__push {
       display: none;
       font-family: Kulim Park;
       position: fixed;
@@ -311,11 +316,12 @@ body {
       border-radius: 0.5rem;
       box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
       text-align: center;
+      font-family: Kulim Park;
     }
    
     /* reusing this font quite a bit, will clean up the code later so
       it doesnt repeat itself too often, and rather is grouped */
-   .f__copyright {
+   .feature__copyright {
       /* Small */
       color: rgba(0, 0, 0, 0.50);
       font-family: Kulim Park;
@@ -326,7 +332,7 @@ body {
       text-align: center;
    }
    
-   .f__copyright__txt {
+   .feature__copyright__text {
       color: rgba(0, 0, 0, 0.80);
       font-family: Kristi;
       font-size: 3.125rem;
@@ -351,12 +357,12 @@ body {
    }
    
    .socialmedia__icons li {
-      width: 7%;
-      height: 7%;
+      width: 10%;
+      height: 10%;
       margin: 0;
    }
    
-   .socialmedia__txt {
+   .socialmedia__text {
       /* Small socialmedia txt */
       color: #000;
       font-family: Kulim Park;
