@@ -1,9 +1,13 @@
 html {
    font-size: 16px; 
+   width: 90rem;
+   height: 117.1875rem;
+   min-height: 117.1875rem;
  }
 body {
    width: 90rem;
    height: 117.1875rem;
+   min-height: 117.1875rem;
    background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
 }
 
@@ -111,17 +115,23 @@ body {
 /* styles for the container and grid items */
 .recipe__container {
    display: grid;
-   grid-template-columns: 3fr 3fr;
-   gap: 1.25rem;
+   grid-template-columns: 2fr 2fr;
+   gap: 0;
    padding-top: 9.94rem;
    padding-bottom: 7.56rem;
    padding-left: 11rem;
 }
 
-.recipe__header, .button__header {
+.recipe__header {
    font-family: Kulim Park;
    font-size: 2.5rem;
    padding-bottom: 2.94rem;
+}
+
+.button__header {
+   font-family: Kulim Park;
+   font-size: 2.5rem;
+   padding-bottom: 0;
    text-align: center;
 }
 
@@ -135,36 +145,59 @@ body {
    margin-bottom: 2rem;
 }
 
-.sort__button {
+.recipe__column2 {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto;
+}
+
+.sort__buttons {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2.38rem;
+   margin-top: -30rem;
+   justify-items: center;
+   align-items: center;
+}
+
+.left-buttons,
+.right-buttons {
+   display: inherit;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* not getting the desired layout, so I am trying to figure it out
+   by using grids */ 
+.sort__button, .button__seasonal {
    width: 6.875rem;
    height: 2.5rem;
    flex-shrink: 0;
    border-radius: 0.3125rem;
    border: 0.0625rem solid #000;
    background-color: lightgray;
-   align-items: center;
    margin-right: 3.12rem;
-   margin-left: 5.44rem;
+   margin-left: 5.8rem;
+   margin-top: 1rem;
    margin-bottom: 2.38rem;
+   align-items: center;
 }
 
 .button__seasonal {
-   font-family: Kulim Park;
-   font-size: 1.25rem;
-   font-weight: 600;
    color: var(--Christmas, #9C0000);
-   width: 6.875rem;
-   height: 2.5rem;
-   flex-shrink: 0;
-   border-radius: 0.3125rem;
-   border: 0.0625rem solid #000;
-   background-color: lightgray;
-   align-items: center;
-   margin-right: 3.12rem;
-   margin-left: 5.44rem;
-   margin-bottom: 2.38rem;
 }
 
+.hero__accessory {
+   position: absolute;
+   right: 50rem;
+}
+
+.button__clear {
+   grid-column: span 3;
+   margin-top: -30rem;
+   margin-right: 0;
+   margin-left: -2rem;
+}
 
 /* styles for the footer and its features */
 .footer__feats {
