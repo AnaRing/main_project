@@ -73,6 +73,13 @@ document.addEventListener('DOMContentLoaded', function() {
   showSlides();
 });
 
+// code for the recipes headline to also redirect to the recipes page
+const recipesHeadline = document.getElementsByClassName('content__headline')[0];
+
+    recipesHeadline.addEventListener('click', function () {
+    window.location.href = 'recipes.html' ;
+}); 
+
 // toast for newsletter submit button
 // finally works with using querySelector instead of getElementById
 
@@ -92,32 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// reusing my button code here for redirections
-// for the social media buttons
-/* const  = document.getElementsByClassName('')[0];
-
-recipesButton.addEventListener('click', function () {
-window.location.href = '' ;
-});
-
-const  = document.getElementsByClassName('')[0];
-
-recipesButton.addEventListener('click', function () {
-window.location.href = '' ;
-});
-
-const  = document.getElementsByClassName('')[0];
-
-recipesButton.addEventListener('click', function () {
-window.location.href = '' ;
-});
-
-
-const  = document.getElementsByClassName('')[0];
-
-recipesButton.addEventListener('click', function () {
-window.location.href = '' ;
-});  */
 
 // some pop-ups for the code prev written in html 
 // for cookies and terms&service
