@@ -11,6 +11,7 @@
      <link href="./css/cc_style.css" rel="stylesheet">
   </head>
   <body>
+    <!-- div and container for header part -->
     <div class="main__header">
       <h1 class="header__text">Ana's tiny</h1>
       <h1 class="header__text__kitchen">KITCHEN</h1>
@@ -18,39 +19,37 @@
       <div>
         <img class="header__picture" src="./main_project_pix/Header.png" alt="cuttingboard with fruit and ham">
       </div>
-      <!-- buttons for navigation, these will redirect directly to the new page
-           so I will later add an 'onClick' feature to each of them  -->
-      <div class="header__buttons">
+      <!-- buttons for navigation, these will redirect directly to the new page-->
+      <div class="header_buttons">
         <button class="button__about">About me</button>
         <button class="button__recipes">Recipes</button>
         <button class="button__contact">Contact me</button>
       </div>
-    </div>
+   </div>
     <!-- this is code I have previously written for a registation form, 
-         which I will be reusing and changing for the purpose of a 
-         contact form -->
-         <div class="contact__container">
-          <div class="form__column2">
-             <h2 class="head__contact">Contact me!</h2>
-             <p class="head__info">
-              If you have anything you wish to see featured on this page,</br>
-              you have any questions about me or my recipes,</br>
-              or you have a recipe of your own that you wish</br>
-              I would try out, and comment on;</br>
-              you can send me a note here!
-              </br>
-              I will get back to you at my earliest convenience, and I am
-              always happy to get mail, tips or any feedback!
-              </br>
-              Thank you for showing interest in my page.</p>
-          </div>
-          <div class="form__column1">
-          <form id="contact__form">
-             <!-- div for input name -->
-             <div class="email__input">
-             <label for="name"><b>Name</b></label></br>
-             <input class="inputs" type="text" id="name" name="name" placeholder="Enter your name">
-          </div>
+         which I have reused and changed for this purpose -->
+    <div class="contact__container">
+      <div class="form__column2">
+        <h2 class="head__contact">Contact me!</h2>
+        <p class="head__info">
+        If you have anything you wish to see featured on this page,</br>
+        you have any questions about me or my recipes,</br>
+        or you have a recipe of your own that you wish</br>
+        I would try out, and comment on;</br>
+        you can send me a note here!
+        </br>
+        I will get back to you at my earliest convenience, and I am
+        always happy to get mail, tips or any feedback!
+        </br>
+        Thank you for showing interest in my page.</p>
+      </div>
+      <div class="form__column1">
+        <form id="contact__form">
+          <!-- div for input name -->
+           <div class="email__input">
+            <label for="name"><b>Name</b></label></br>
+            <input class="inputs" type="text" id="name" name="name" placeholder="Enter your name">
+           </div>
          <!-- div for input email -->              
           <div class="email__input">
              <label class="email__label" for="email"><b>Email</b></label></br>

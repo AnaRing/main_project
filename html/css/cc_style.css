@@ -16,8 +16,7 @@ body {
   box-sizing: border-box;
 }
 
-/* made a main header container so I can 
-  try to lay it out according to the prototype */
+/* made a main header container and styles */
 .main__header {
   position: relative;
 }
@@ -26,7 +25,6 @@ body {
   width: 100%;
   height: auto;
 }
-
 .header__text {
   position: absolute;
   z-index: 2;
@@ -37,7 +35,8 @@ body {
   height: 6.08975rem;
   flex-shrink: 0;
   display: block;
-  font-size: 2rem;
+  font-family: Kristi;
+  font-size: 3.5rem;
   margin-block-start: 0.67rem;
   margin-block-end: 0.67rem;
   margin-inline-start: 0;
@@ -92,6 +91,8 @@ body {
 .header_buttons button {
   margin: 0.3125rem;
 }
+
+/* the contact form container and content */
 
 .contact__container {
   display: grid;
