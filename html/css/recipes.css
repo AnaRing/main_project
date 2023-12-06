@@ -145,6 +145,8 @@ body {
    margin-bottom: 2rem;
 }
 
+/* the sort buttons */
+
 .recipe__column2 {
    display: grid;
    grid-template-columns: 1fr;
@@ -167,8 +169,6 @@ body {
    align-items: center;
 }
 
-/* not getting the desired layout, so I am trying to figure it out
-   by using grids */ 
 .sort__button, .button__seasonal {
    width: 6.875rem;
    height: 2.5rem;
@@ -185,11 +185,6 @@ body {
 
 .button__seasonal {
    color: var(--Christmas, #9C0000);
-}
-
-.hero__accessory {
-   position: absolute;
-   right: 50rem;
 }
 
 .button__clear {
@@ -209,7 +204,6 @@ body {
  }
 
 .newsletter__text {
-   /* small newsletter txt */
    color: #000;
    font-family: Kulim Park;
    font-size: 1rem;
@@ -272,9 +266,8 @@ body {
    font-size: 1rem;
    padding-left: 1rem;
  }
-/* got some help from ChatGPT on the general layout of the popup,
-   will style it according to how I picture it later, 
-   I just needed a "base */
+
+
  .overlay__cookies, .overlay__terms {
    display: none;
  }
@@ -288,8 +281,6 @@ body {
    font-family: Kulim Park;
  }
 
- /* reusing this font quite a bit, will clean up the code later so
-   it doesnt repeat itself too often, and rather is grouped */
 .feature__copyright {
    /* Small */
    color: rgba(0, 0, 0, 0.50);
@@ -332,7 +323,6 @@ body {
 }
 
 .socialmedia__text {
-   /* Small socialmedia txt */
    color: #000;
    font-family: Kulim Park;
    font-size: 1rem;

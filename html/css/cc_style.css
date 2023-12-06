@@ -207,8 +207,23 @@ body {
   padding: 0.9375rem;
  }
 
-  /* made a footer container so I can try to place
-   the features according to the prototype */
+ #submit__negative__toast {
+  display: none;
+  font-family: Kulim Park;
+  position: fixed;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0.3125rem;
+  border: 1px solid #357340;
+  background: rgba(255, 138, 138, 0.50);
+  color:black;    
+  width: 21.4375rem;
+  height: 3.9375rem;
+  padding: 0.9375rem;
+ }
+
+  /* styles for the footer container */
 
    .footer__feats {
     display: grid;
@@ -219,7 +234,6 @@ body {
   }
  
  .newsletter__text {
-    /* small newsletter txt */
     color: #000;
     font-family: Kulim Park;
     font-size: 1rem;
@@ -282,9 +296,8 @@ body {
     font-size: 1rem;
     padding-left: 1rem;
   }
- /* got some help from ChatGPT on the general layout of the popup,
-    will style it according to how I picture it later, 
-    I just needed a "base */
+
+
   .overlay__cookies, .overlay__terms {
     display: none;
   }
@@ -298,10 +311,7 @@ body {
     font-family: Kulim Park;
   }
  
-  /* reusing this font quite a bit, will clean up the code later so
-    it doesnt repeat itself too often, and rather is grouped */
  .feature__copyright {
-    /* Small */
     color: rgba(0, 0, 0, 0.50);
     font-family: Kulim Park;
     font-size: 0.95rem;
@@ -342,7 +352,6 @@ body {
  }
  
  .socialmedia__text {
-    /* Small socialmedia txt */
     color: #000;
     font-family: Kulim Park;
     font-size: 1rem;

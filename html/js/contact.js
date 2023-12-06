@@ -50,20 +50,39 @@ function handleScroll(event) {
 // contact me form js
 
 // toast function for the contact me form
+
+// finally made it work, apparently html 'required' was overriding on the webpage
+// here is an array that checks if the inputs are filled, and it pushes a negative toast if
+// any of the areas are empty, and pushes positive when all are filled
 document.addEventListener('DOMContentLoaded', function() {
    const form = document.getElementById('contact__form');
    const toast = document.getElementById('submit__toast');
- 
+   const negativeToast = document.getElementById('submit__negative__toast');
+
    form.addEventListener('submit', function (event) {
        event.preventDefault();
-       toast.style.display = 'block';
- 
-       setTimeout(function() {
-         toast.style.display = 'none';
-         form.reset();
-       }, 2000);
-     });
- });
+
+       if (isFormFilledOut(form)) {
+           toast.style.display = 'block';
+           negativeToast.style.display = 'none';
+           setTimeout(function () {
+               toast.style.display = 'none';
+               form.reset();
+           }, 2000);
+       } else {
+           negativeToast.style.display = 'block';
+           setTimeout(function () {
+               negativeToast.style.display = 'none';
+           }, 2000);
+       }
+   });
+
+   function isFormFilledOut(form) {
+       const inputs = form.querySelectorAll('.inputs, textarea');
+       return Array.from(inputs).every(input => input.value.trim() !== '');
+   }
+});
+
 
  // toast function for newsletter signup
 

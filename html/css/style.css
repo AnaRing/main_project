@@ -189,14 +189,13 @@ body {
    try to lay it out according to the prototype */
    .headline__container {
       text-align: center;
-      margin-top: 4rem;
    }
    
    .content__headline {
       font-family: Kristi;
       font-size: 4.375rem;
+      margin-top: 2rem;
    }
-   /* style the container */
    
    .undersection__container {
       display: flex;
@@ -212,8 +211,9 @@ body {
       vertical-align: top;
    }
    
-   /* style the columns */
-   
+   /* they were made as buttons, because they were meant to be pressed
+      to get into the different recipes, but that function isnt added as there are 
+      no recipe pages - this was just the idea */
    .recipe__button {
       width: 100%;
       border: none;
@@ -238,7 +238,6 @@ body {
     }
    
    .newsletter__text {
-      /* small newsletter txt */
       color: #000;
       font-family: Kulim Park;
       font-size: 1rem;
@@ -301,9 +300,9 @@ body {
       font-size: 1rem;
       padding-left: 1rem;
     }
-   /* got some help from ChatGPT on the general layout of the popup,
-      will style it according to how I picture it later, 
-      I just needed a "base */
+   /* got some help from ChatGPT on the general layout to have something to start with,
+      keeping the layout since it is more important that it works, and my css is featured
+      everywhere else on the page */
     .overlay__cookies, .overlay__terms {
       display: none;
     }
@@ -317,10 +316,9 @@ body {
       font-family: Kulim Park;
     }
    
-    /* reusing this font quite a bit, will clean up the code later so
-      it doesnt repeat itself too often, and rather is grouped */
+    /* style for the middle part of the footer */
+    
    .feature__copyright {
-      /* Small */
       color: rgba(0, 0, 0, 0.50);
       font-family: Kulim Park;
       font-size: 0.95rem;
@@ -361,7 +359,6 @@ body {
    }
    
    .socialmedia__text {
-      /* Small socialmedia txt */
       color: #000;
       font-family: Kulim Park;
       font-size: 1rem;
