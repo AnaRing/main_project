@@ -1,0 +1,422 @@
+
+html {
+   font-size: 16px; 
+ }
+body {
+   width: 90rem;
+   height: 117.1875rem;
+   background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* made a main header container so I can 
+   try to lay it out according to the prototype */
+.main__header {
+   position: relative;
+}
+
+.header__picture {
+   width: 100%;
+   height: auto;
+}
+.header__text {
+   position: absolute;
+   z-index: 2;
+   top: 55%;
+   left: 70%;
+   transform: translate(-50%, -50%) rotate(-6.65deg);
+   width: 23.89519rem;
+   height: 6.08975rem;
+   flex-shrink: 0;
+   display: block;
+   font-family: Kristi;
+   font-size: 3.5rem;
+   margin-block-start: 0.67rem;
+   margin-block-end: 0.67rem;
+   margin-inline-start: 0;
+   margin-inline-end: 0;
+   font-weight: bold;
+}
+
+.header__text__kitchen {
+   position: absolute;
+   top: 67%;
+   left: 75%;
+   transform: translate(-50%, -50%);
+   width: 32.8125rem;
+   height: 6.1875rem;
+   flex-shrink: 0;
+   color: var(--White, #FFF);
+   font-family: Kulim Park;
+   font-size: 8.125rem;
+   font-style: italic;
+   font-weight: 600;
+   line-height: normal;
+}
+
+.header_buttons {
+   position: absolute;
+   top: 5%;
+   left: 65%;
+   font-family: Kulim Park;
+}
+
+.header_buttons button {
+   margin: 0.3125rem;
+}
+
+/* made a hero feature container so I can 
+   try to lay it out according to the prototype */
+
+.hero__text__container {
+   position: relative;
+   padding-left: 13.81rem;
+   padding-top: 0;
+}
+
+.hero__container {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   gap: 1.5rem;
+   padding-left: 9.875rem;
+   padding-right: 9.875rem;
+}
+
+.hero__text {
+   position: absolute;
+   top: -1.5rem;
+   left: 2.6rem;
+   color: #000;
+   font-family: Kristi;
+   font-size: 5rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   transform: rotate(-4.65deg)
+}
+
+.hero__text__christmas {
+   position: absolute;
+   z-index: 2;
+   top: 2.5rem;
+   left: 11rem;
+   color: #9C0000;
+   font-family: Kristi;
+   font-size: 7rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 95.5%;
+   transform: rotate(-4.65deg);
+   margin-bottom: -1.25rem;
+}
+
+.hero__present {
+   position: relative;
+   top: 4.5rem;
+   left:-6.5rem;
+   height: 30%;
+   width: 30%;
+   transform: rotate(-4.5deg)
+}
+
+.info__text {
+   color: #000;
+   font-family: Kulim Park;
+   font-size: 1.32rem;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   margin-top: 5rem;
+   padding-left: 5.94rem;
+}
+
+/* slideshow */
+
+.slideshow__container {
+   padding-top: 5.625rem;
+   margin: 0 auto;
+   overflow: hidden;
+}
+
+.oneSlide {
+   display: none;
+   width: 100%;
+   min-height: 34.8125rem;
+}
+
+.slide__image1, .slide__image2, .slide__image3, .slide__image4 {
+   width: 100%;
+   min-height: 24.8125rem;
+   min-width: 36.25rem;
+}
+
+.fade {
+   animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+   0%, 100% { opacity: 0.4; }
+   20%, 80% { opacity: 1; }
+}
+
+/* made an undersection container so I can
+   try to lay it out according to the prototype */
+   .headline__container {
+      text-align: center;
+   }
+   
+   .content__headline {
+      font-family: Kristi;
+      font-size: 4.375rem;
+      margin-top: 2rem;
+      cursor: pointer;
+   }
+   
+   .undersection__container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 9.175rem;
+      justify-content: space-between;
+   }
+   
+   .recipe__wrapper {
+      width: calc(25% - 2rem);
+      display: inline-block;
+      margin-bottom: 2rem;
+      vertical-align: top;
+   }
+   
+   /* they were made as buttons, because they were meant to be pressed
+      to get into the different recipes, but that function isnt added as there are 
+      no recipe pages - this was just the idea */
+   .recipe__button {
+      width: 100%;
+      border: none;
+      padding: 0;
+   }
+   
+   .taco__description, .mussels__description,
+   .ramen__description, .ragu__description {
+      margin-top: 1rem;
+      text-align: center;
+      font-family: Kulim Park;
+   }
+
+ /* made a footer container so I can try to place
+   the features according to the prototype */
+   .footer__feats {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10.5rem;
+      padding-left: 10.1rem;
+      padding-right: 10.1rem;
+    }
+   
+   .newsletter__text {
+      color: #000;
+      font-family: Kulim Park;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding-left: 0.59rem;
+   }
+
+   .newsletter__submit {
+      font-family: Kulim Park;
+      width: 4.875rem;
+      height: 1.5rem;
+      flex-shrink: 0;
+      border-radius: 0.3125rem;
+      border: 0.0625rem solid #000;
+      background-color: lightgray;
+   }
+   
+   .newsletter__submit:hover {
+      border-color: orange;
+      background-color: lightcyan;
+    }
+
+   .newsletter__input {
+      width: 16.5625rem;
+      height: 2rem;
+      flex-shrink: 0;
+      font-family: Kulim Park;
+      border-radius: 0.1875rem;
+      border: 0.0625rem solid rgba(0, 0, 0, 0.70);
+      background: var(--White, #FFF);
+      padding-left: 10.06rem;
+
+   
+      /* placeholder */
+      color: rgba(0, 0, 0, 0.50);
+      font-family: Kulim Park;
+      font-size: 0.95rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+   }
+   
+   /* style for the newsletter toast */
+   #newsletter__toast__push {
+      display: none;
+      font-family: Kulim Park;
+      position: fixed;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translate(-50%);
+      border-radius: 0.3125rem;
+      border: 1px solid #357340;
+      background: rgba(102, 200, 119, 0.50);
+      color:black;
+      width: 21.4375rem;
+      height: 3.9375rem;
+      padding: 0.9375rem;
+   }
+   
+   .footer__links {
+      display: flex;
+      font-family: Kulim Park;
+      text-align: center;
+      justify-content: center;
+      width: 100%; 
+      margin: 0 auto; 
+    }
+   
+    .footer__links p {
+      margin-top: 4.62rem;
+      margin-right: 4.94rem;
+      cursor: pointer;
+      font-size: 1rem;
+      padding-left: 1rem;
+    }
+   /* got some help from ChatGPT on the general layout to have something to start with,
+      keeping the layout since it is more important that it works, and my css is featured
+      everywhere else on the page */
+    .overlay__cookies, .overlay__terms {
+      display: none;
+    }
+   
+    .popup {
+      background-color: #fff;
+      padding: 0.9375rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+      text-align: center;
+      font-family: Kulim Park;
+    }
+   
+    /* style for the middle part of the footer */
+
+   .feature__copyright {
+      color: rgba(0, 0, 0, 0.50);
+      font-family: Kulim Park;
+      font-size: 0.95rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+   }
+   
+   .feature__copyright__text {
+      color: rgba(0, 0, 0, 0.80);
+      font-family: Kristi;
+      font-size: 3.125rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+   }
+   
+   .footer__column3 {
+      text-align: center;
+   }
+   
+   .socialmedia__icons {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 1.53rem;
+   }
+   
+   .socialmedia__icons li {
+      width: 10%;
+      height: 10%;
+      margin: 0;
+   }
+   
+   .socialmedia__text {
+      color: #000;
+      font-family: Kulim Park;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-align: center;
+   }
+
+   /* responsive styles */ 
+
+   @media screen and (max-width: 800px) {
+      .header__text {
+         font-size: 2.5rem;
+         top: 59%;
+         left: 75%;
+      }
+   
+      .header__text__kitchen {
+         font-size: 5rem;
+         top: 75%;
+         left: 80%;
+      }
+   
+      .header_buttons {
+         top: 5%;
+         left: 80%;
+         transform: translateX(-50%);
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   
+      .header_buttons button {
+         margin: 0.3125rem;
+      }
+
+      /* responsive styles for the undersection */
+
+      .headline__container {
+         padding: 4rem 0;
+         font-size: 2.5rem;
+         text-align: center;
+      }
+
+      .undersection__container {
+         display: flex;
+         flex-direction: column;
+         grid-template-columns: 1fr;
+         column-width: 100%;
+         padding-left: 28rem;
+      }
+
+      .recipe__buttons {
+         width: 35rem;
+         height: 28rem;
+         flex-shrink: 0;
+      }
+
+      .ragu__description, .mussels__description,
+      .ramen__description, .taco__description {
+         font-size: 3rem;
+         display: inline-block;
+         padding-left: 10rem;
+      }
+   }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://endearing-lebkuchen-112ca6.netlify.app/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- relevant title -->
+   <title>Ana's tiny kitchen</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./Ana&#39;s tiny kitchen_files/reset.css">
+    <link rel="stylesheet" href="./Ana&#39;s tiny kitchen_files/style.css">
+   </head>
+
+   <body>
+      <!-- div and container for header part -->
+      <!-- making header clickable so it redirects home from the different sites -->
+      <div class="main__header">
+         <h1 class="header__text">Ana's tiny</h1>
+         <h1 class="header__text__kitchen">KITCHEN</h1>
+         <!-- header image -->
+         <div>
+           <img class="header__picture" src="./Ana&#39;s tiny kitchen_files/Header.png" alt="cuttingboard with fruit and ham">
+         </div>
+         <!-- buttons for navigation, these will redirect directly to the new page-->
+         <div class="header_buttons">
+           <button class="button__about">About me</button>
+           <button class="button__recipes">Recipes</button>
+           <button class="button__contact">Contact me</button>
+         </div>
+      </div>
+       <div class="hero__container">
+         <div class="hero__column1">
+            <div class="hero__text__container">
+               <!-- for the header for hero feature -->
+               <h2 class="hero__text">Are you ready for</h2>
+               <!-- for the hero feat text accessory -->
+               <div class="hero__accessory">
+                  <img class="hero__present" src="./Ana&#39;s tiny kitchen_files/Vector.png" alt="red present">
+               </div>
+               <h2 class="hero__text__christmas">Christmas?</h2>
+           </div>
+         <!-- for the hero text paragraph -->
+         <p class="info__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Praesent vel maximus dolor. Proin maximus massa non purus
+            sollicitudin, nec rhoncus lacus venenatis. 
+            Curabitur tempor, lectus ut blandit bibendum, velit ligula 
+            rhoncus leo, a consectetur tortor justo ac orci. 
+            Morbi varius diam felis, quis varius felis lacinia id. 
+            Quisque hendrerit nisl mi, nec pretium metus rutrum sed. 
+            Vivamus convallis ipsum at orci condimentum ultrices. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+         </p>
+         </div>
+         <div class="hero__column2">
+            <!-- for the slideshow -->
+            <div class="slideshow__container">
+               <div class="oneSlide fade" style="display: block;">
+                  <img class="slide__image1" src="./Ana&#39;s tiny kitchen_files/Slideshow.png" style="width:50%" alt="duck breast with red beet sauce and potatoes">
+               </div>
+               <div class="oneSlide fade" style="display: none;">
+                  <img class="slide__image2" src="./Ana&#39;s tiny kitchen_files/Slideshow2.png" style="width:50%" alt="norwegian pork belly ribs">
+               </div>
+               <div class="oneSlide fade" style="display: none;">
+                  <img class="slide__image3" src="./Ana&#39;s tiny kitchen_files/Slideshow3.png" style="width:50%" alt="hot chocolate with whipped cream">
+               </div>
+               <div class="oneSlide fade" style="display: none;">
+                  <img class="slide__image4" src="./Ana&#39;s tiny kitchen_files/Slideshow4.png" style="width:50%" alt="norwegian lamb in cabbage stew">
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- a div for the section under the hero feature -->
+      <div class="headline__container">
+         <h3 class="content__headline">Recipes</h3>
+      </div>
+      <div class="undersection__container">
+         <div class="recipe__wrapper">
+            <button class="recipe__buttons"><img src="./Ana&#39;s tiny kitchen_files/Recipe1.png" alt="tortilla with meat and veggies"></button>
+            <p class="taco__description">A delicious pulled pork taco, with guacamole, pickled red onions, and cilantro.</p>
+         </div>
+         <div class="recipe__wrapper">
+            <button class="recipe__buttons"><img src="./Ana&#39;s tiny kitchen_files/Recipe4.png" alt="mussels with parsley"></button>
+            <p class="mussels__description">Mussels steamed with cream, garlic, chili, and white wine.</p>
+         </div>
+         <div class="recipe__wrapper">
+            <button class="recipe__buttons"><img src="./Ana&#39;s tiny kitchen_files/Recipe3.png" alt="noodlesoup with chicken and egg"></button>
+            <p class="ramen__description">Ramen with a hearty broth, chicken breast, spring onion, mushrooms, and soy eggs.</p>
+         </div>
+         <div class="recipe__wrapper">
+            <button class="recipe__buttons"><img src="./Ana&#39;s tiny kitchen_files/Recipe2.png" alt="pasta with meat sauce and cheese"></button>
+            <p class="ragu__description">Pasta ragu-sauce made with braised ox-tail, vegetables, and Parmigiano.</p>
+            </div>
+         </div>
+         
+       
+         <!-- a div and container for the footer -->
+         <div class="footer__feats">
+            <!-- for the newsletter feature -->
+            <div class="footer__column1">
+               <form id="form__newsletter">
+                  <p class="newsletter__text">Sign up for my newsletter</p>
+                  <input id="newsletter__input" type="email" placeholder="Email adress.." required="">
+                  <button class="newsletter__submit">Submit</button>
+               </form>
+            </div>
+            <div id="newsletter__toast__push">Thanks for signing up!</div>
+            <!-- for the copyright -->
+            <div class="footer__column2">
+               <div class="trademark__tiny">
+                  <p class="feature__copyright">Copyright©2023</p>
+                  <h3 class="feature__copyright__text">Ana's tiny kitchen</h3>
+               </div>
+            <!-- for the popup feature -->
+               <div class="footer__links">
+                  <p onclick="openPopup(&#39;popCookies&#39;)"><i>Cookies</i></p>
+                  <div class="overlay__cookies" id="popCookies">
+                      <div class="popup">
+                          <h4 class="overlay__headliner">Information about Cookies</h4>
+                          <p class="overlay__text">This is some important information you need to know.</p>
+                          <button onclick="closePopup(&#39;popCookies&#39;)">Close</button>
+                      </div>
+                  </div>
+          
+                  <p onclick="openPopup(&#39;popTerms&#39;)"><i>Terms &amp; Conditions</i></p>
+                  <div class="overlay__terms" id="popTerms">
+                      <div class="popup">
+                          <h4 class="overlay__headliner">Information regarding Terms &amp; Conditions</h4>
+                          <p class="overlay__text">This is some important information you need to know.</p>
+                          <button onclick="closePopup(&#39;popTerms&#39;)">Close</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="footer__column3">
+               <!-- for the connect with me feature, I wanted an openTab feature for this
+               I wont make them redirect on click, but I coded them with the intention of making this work -->
+               <p class="socialmedia__text">Connect with me on</p>
+               <ul class="socialmedia__icons"> <!-- with the onlick for js, will be added in js later -->
+                  <li class="button__instagram" onclick="openTab(&#39;tabIg&#39;)"><img src="./Ana&#39;s tiny kitchen_files/IG.png" alt="black instagram icon"></li>
+                  <li class="button__facebook" onclick="openTab(&#39;tabFb&#39;)"><img src="./Ana&#39;s tiny kitchen_files/FB.png" alt="blue facebook icon"></li>
+                  <li class="button__x" onclick="openTab(&#39;tabX&#39;)"><img src="./Ana&#39;s tiny kitchen_files/X.png" alt="black x icon"></li>
+                  <li class="button__snapchat" onclick="openTab(&#39;tabSc&#39;)"><img src="./Ana&#39;s tiny kitchen_files/SC.png" alt="yellow snapchat icon"></li>
+               </ul>
+            </div>
+         </div>
+   
+      <!-- javascript link -->
+      <script src="./Ana&#39;s tiny kitchen_files/main.js.last ned"></script>
+   
+
+</body></html>
