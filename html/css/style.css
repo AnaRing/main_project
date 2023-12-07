@@ -258,6 +258,11 @@ body {
       background-color: lightgray;
    }
    
+   .newsletter__submit:hover {
+      border-color: orange;
+      background-color: lightcyan;
+    }
+
    .newsletter__input {
       width: 16.5625rem;
       height: 2rem;

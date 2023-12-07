@@ -62,27 +62,7 @@ body {
 }
 
 /* added responsive styles */
-@media only screen and (max-width: 768px) {
-   .header__text {
-     position: absolute;
-     top: 57%;
-     left: 58%;
-     transform: translate(-50%, -50%) rotate(-6.65deg) ;
-     width: auto;
-     height: auto;
-     font-size: 2.5rem;
-   }
- 
-   .header__text__kitchen {
-     position: absolute;
-     top: 75%; 
-     left: 64%;
-     transform: translate(-50%, -50%);
-     width: auto;
-     height: auto;
-     font-size: 5rem;
-   }
- }
+
 
  /* styles for the header navigatory buttons */
  .header_buttons {
@@ -120,6 +100,7 @@ body {
    padding-top: 9.94rem;
    padding-bottom: 7.56rem;
    padding-left: 11rem;
+   padding-right: 11rem;
 }
 
 .recipe__header {
@@ -147,52 +128,38 @@ body {
 
 /* the sort buttons */
 
-.recipe__column2 {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-rows: auto auto;
-}
-
-.sort__buttons {
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 2.38rem;
-   margin-top: -30rem;
-   justify-items: center;
-   align-items: center;
-}
-
-.left-buttons,
-.right-buttons {
-   display: inherit;
-   flex-direction: column;
-   align-items: center;
-}
-
-.sort__button, .button__seasonal {
+.sort__button {
+   border-radius: 0.3125rem;
+   border: 0.0625px solid #000;
+   background: #D9D9D9;
    width: 6.875rem;
    height: 2.5rem;
    flex-shrink: 0;
-   border-radius: 0.3125rem;
-   border: 0.0625rem solid #000;
-   background-color: lightgray;
-   margin-right: 3.12rem;
-   margin-left: 5.8rem;
-   margin-top: 1rem;
-   margin-bottom: 2.38rem;
-   align-items: center;
+   margin-top: 2rem;
+   margin-right: 2rem;
+   margin-left: 2rem;
+   margin-bottom: 2rem;
+}
+
+.button__clear {
+   position: relative;
+   left: 32.5%;
 }
 
 .button__seasonal {
    color: var(--Christmas, #9C0000);
 }
 
-.button__clear {
-   grid-column: span 3;
-   margin-top: -30rem;
-   margin-right: 0;
-   margin-left: -2rem;
+.sort__button:hover {
+   border-color: orange;
+   background-color: lightcyan;
 }
+
+
+
+
+
+
 
 /* styles for the footer and its features */
 .footer__feats {
@@ -242,6 +209,11 @@ body {
    border: 0.0625rem solid #000;
    background-color: lightgray;
 }
+
+.newsletter__submit:hover {
+   border-color: orange;
+   background-color: lightcyan;
+ }
 
 /* style for the newsletter toast */
 #newsletter__toast__push {
