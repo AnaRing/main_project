@@ -156,11 +156,6 @@ body {
 }
 
 
-
-
-
-
-
 /* styles for the footer and its features */
 .footer__feats {
    display: grid;
@@ -312,4 +307,61 @@ body {
    font-weight: 600;
    line-height: normal;
    text-align: center;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 800px) {
+   .header__text {
+      font-size: 2.5rem;
+      top: 59%;
+      left: 75%;
+   }
+
+   .header__text__kitchen {
+      font-size: 5rem;
+      top: 75%;
+      left: 80%;
+   }
+
+   .header_buttons {
+      top: 5%;
+      left: 80%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   /* for the page content */
+
+   .recipe__container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1.5rem;
+   }
+
+   .recipe__column1, .recipe__column2 {
+      width: 100%;
+   }
+
+   .recipe__column1 {
+      text-align: center;
+   }
+
+   .recipe__column2 {
+      order: -1;
+   }
+
+   .sort__buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .button__clear {
+      position: static;
+   }
 }

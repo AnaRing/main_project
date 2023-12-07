@@ -1,10 +1,15 @@
 /* Common styles */
 html {
   font-size: 16px; 
+  width: 90rem;
+  height: 117.1875rem;
+  min-height: 117.1875rem;
 }
+
 body {
   width: 90rem;
   height: 117.1875rem;
+  min-height: 117.1875rem;
   background: linear-gradient(0deg, rgba(219, 199, 152, 0.15) 0%, rgba(219, 199, 152, 0.15) 100%), #FFF;
 }
 
@@ -57,8 +62,6 @@ body {
   font-weight: 600;
   line-height: normal;
 }
-
-/* added responsive styles */
 
 
 .header_buttons {
@@ -356,3 +359,66 @@ body {
     line-height: normal;
     text-align: center;
  }
+
+ /* responsive styles */
+
+ @media screen and (max-width: 800px) {
+  .header__text {
+     font-size: 2.5rem;
+     top: 59%;
+     left: 75%;
+  }
+
+  .header__text__kitchen {
+     font-size: 5rem;
+     top: 75%;
+     left: 80%;
+  }
+
+  .header_buttons {
+     top: 5%;
+     left: 80%;
+     transform: translateX(-50%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+  }
+
+  /* responsive styles for the columns */
+
+  .head__contact, .head__info {
+    text-align: center;
+  }
+
+  .head__contact {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .head__info {
+    font-size: 1.3rem;
+  }
+
+  .contact__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6.94rem;
+    padding-top: 8.94rem;
+    padding-bottom: 10rem;
+    padding-left: 10.6rem;
+  }
+
+  .form__column2 {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .form__column1 {
+    text-align: center;
+  }
+
+  .submit__button {
+    margin-right: 10rem;
+  }
+
+}
